@@ -1,0 +1,22 @@
+digraph G {
+    node [
+        shape = "record"
+        ]
+    s00 [label="{0|{{4A|26|80}|{74|38|128}}}",style="filled",color="#4A2680" fontcolor="#ffffff"]
+    s01 [label="{1|{{29|26|80}|{41|38|128}}}",style="filled",color="#292680" fontcolor="#ffffff"]
+    s02 [label="{2|{{26|44|80}|{38|68|128}}}",style="filled",color="#264480" fontcolor="#ffffff"]
+    s03 [label="{3|{{26|65|80}|{38|101|128}}}",style="filled",color="#266580" fontcolor="#ffffff"]
+    s04 [label="{4|{{26|80|7A}|{38|128|122}}}",style="filled",color="#26807A" fontcolor="#ffffff"]
+    s05 [label="{5|{{26|80|59}|{38|128|89}}}",style="filled",color="#268059" fontcolor="#ffffff"]
+    s06 [label="{6|{{26|80|38}|{38|128|56}}}",style="filled",color="#268038" fontcolor="#ffffff"]
+    s07 [label="{7|{{35|80|26}|{53|128|38}}}",style="filled",color="#358026" fontcolor="#ffffff"]
+    s08 [label="{8|{{56|80|26}|{86|128|38}}}",style="filled",color="#568026" fontcolor="#ffffff"]
+    s09 [label="{9|{{77|80|26}|{119|128|38}}}",style="filled",color="#778026" fontcolor="#ffffff"]
+    s0A [label="{a|{{80|68|26}|{128|104|38}}}",style="filled",color="#806826" fontcolor="#ffffff"]
+    s0B [label="{b|{{80|47|26}|{128|71|38}}}",style="filled",color="#804726" fontcolor="#ffffff"]
+    s0C [label="{c|{{80|26|26}|{128|38|38}}}",style="filled",color="#802626" fontcolor="#ffffff"]
+    s0D [label="{d|{{80|26|53}|{128|38|83}}}",style="filled",color="#802653" fontcolor="#ffffff"]
+    s0E [label="{e|{{80|26|74}|{128|38|116}}}",style="filled",color="#802674" fontcolor="#ffffff"]
+    s0F [label="{f|{{6B|26|80}|{107|38|128}}}",style="filled",color="#6B2680" fontcolor="#ffffff"]
+
+}

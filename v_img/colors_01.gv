@@ -1,0 +1,20 @@
+digraph G {
+
+    s00 [label="0",style="filled",color="#3B1F66" fontcolor="#ffffff"]
+    s01 [label="1",style="filled",color="#211F66" fontcolor="#ffffff"]
+    s02 [label="2",style="filled",color="#1F3666" fontcolor="#ffffff"]
+    s03 [label="3",style="filled",color="#1F5166" fontcolor="#ffffff"]
+    s04 [label="4",style="filled",color="#1F6661" fontcolor="#ffffff"]
+    s05 [label="5",style="filled",color="#1F6647" fontcolor="#ffffff"]
+    s06 [label="6",style="filled",color="#1F662D" fontcolor="#ffffff"]
+    s07 [label="7",style="filled",color="#2B661F" fontcolor="#ffffff"]
+    s08 [label="8",style="filled",color="#45661F" fontcolor="#ffffff"]
+    s09 [label="9",style="filled",color="#5F661F" fontcolor="#ffffff"]
+    s0A [label="a",style="filled",color="#66531F" fontcolor="#ffffff"]
+    s0B [label="b",style="filled",color="#66391F" fontcolor="#ffffff"]
+    s0C [label="c",style="filled",color="#661F1F" fontcolor="#ffffff"]
+    s0D [label="d",style="filled",color="#661F42" fontcolor="#ffffff"]
+    s0E [label="e",style="filled",color="#661F5C" fontcolor="#ffffff"]
+    s0F [label="f",style="filled",color="#551F66" fontcolor="#ffffff"]
+
+}

@@ -1,0 +1,22 @@
+digraph G {
+    node [
+        shape = "record"
+        ]
+    s00 [ label="{0|{{59|2E|99}|{89|46|153}}}",style="filled",color="#592E99" fontcolor="#ffffff"]
+    s01 [ label="{1|{{31|2E|99}|{49|46|153}}}",style="filled",color="#312E99" fontcolor="#ffffff"]
+    s02 [ label="{2|{{2E|52|99}|{46|82|153}}}",style="filled",color="#2E5299" fontcolor="#ffffff"]
+    s03 [ label="{3|{{2E|79|99}|{46|121|153}}}",style="filled",color="#2E7999" fontcolor="#ffffff"]
+    s04 [ label="{4|{{2E|99|92}|{46|153|146}}}",style="filled",color="#2E9992" fontcolor="#ffffff"]
+    s05 [ label="{5|{{2E|99|6B}|{46|153|107}}}",style="filled",color="#2E996B" fontcolor="#ffffff"]
+    s06 [ label="{6|{{2E|99|43}|{46|153|67}}}",style="filled",color="#2E9943" fontcolor="#ffffff"]
+    s07 [ label="{7|{{40|99|2E}|{64|153|46}}}",style="filled",color="#40992E" fontcolor="#ffffff"]
+    s08 [ label="{8|{{67|99|2E}|{103|153|46}}}",style="filled",color="#67992E" fontcolor="#ffffff"]
+    s09 [ label="{9|{{8E|99|2E}|{142|153|46}}}",style="filled",color="#8E992E" fontcolor="#ffffff"]
+    s10 [ label="{A|{{99|7C|2E}|{153|124|46}}}",style="filled",color="#997C2E" fontcolor="#ffffff"]
+    s11 [ label="{B|{{99|55|2E}|{153|85|46}}}",style="filled",color="#99552E" fontcolor="#ffffff"]
+    s12 [ label="{C|{{99|2E|2E}|{153|46|46}}}",style="filled",color="#992E2E" fontcolor="#ffffff"]
+    s13 [ label="{D|{{99|2E|63}|{153|46|99}}}",style="filled",color="#992E63" fontcolor="#ffffff"]
+    s14 [ label="{E|{{99|2E|8B}|{153|46|139}}}",style="filled",color="#992E8B" fontcolor="#ffffff"]
+    s15 [ label="{F|{{80|2E|99}|{128|46|153}}}",style="filled",color="#802E99" fontcolor="#ffffff"]
+
+}

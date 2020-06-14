@@ -1,0 +1,403 @@
+digraph G {
+    {
+        node [shape=plaintext,fontsize=20];
+        lv0gen [ label="lv 0"];
+        lv0rgb [ label="rgb"];
+        lv1gen [ label="lv 1"]
+        lv1aut [ label="aut"]
+        lv1vld [ label="vld"]
+        lv2gen [ label="lv 2"];
+        lv2aut [ label="aut"];
+        lv2isr [ label="isr"];
+        lv2mdl [ label="mdl"]
+        lv3gen [ label="lv 3"];
+        lv3sys [ label="sys"];
+        lv3prg [ label="prg"];
+        lv4gen [ label="gen"];
+        lv4mdlphy [ label="phy"];
+        lv4mdlety [ label="ety"];
+        lv4mdlpcd [ label="pcd"];
+        
+        lv0gen -> lv1gen;
+        lv1gen -> lv1aut;
+        lv1aut -> lv1vld;
+        lv1vld -> lv2gen;
+        lv2gen -> lv2mdl;
+        lv2mdl -> lv2aut;
+        lv2aut -> lv2isr
+        lv2isr -> lv3gen;
+        lv3gen -> lv3sys;
+        lv3sys -> lv3prg;
+        lv3prg -> lv0rgb;
+        lv0rgb -> lv4gen;
+        lv4gen -> lv4mdlphy;
+        lv4mdlphy -> lv4mdlety;
+        lv4mdlety -> lv4mdlpcd;
+    }
+    node [
+        shape = "record"
+        style="filled"
+        fontsize=12
+        fontname="Arial bold"
+        fontcolor="#ffffff"
+        ]
+    {
+        rank=same;
+        lv0gen;
+        
+        lv0genLbl [ label="gen",color="#802680" ]
+        lv0gen0 [ label="{0 | prj | std | gen | gen | gen }",color="#802680" ]
+        lv0gen1 [ label="{1 | prc | sys | dev | sys | sys }",color="#752E99" ]
+        lv0gen2 [ label="{2 | spc | equ | plc | cpl | cor }",color="#262680" ]
+        lv0gen3 [ label="{3 | dsg | prg | dcs | dbs | dat }",color="#264480" ]
+        lv0gen4 [ label="{4 | mdu | ifc | ifc | web | tlg }",color="#268080" ]
+        lv0gen5 [ label="{5 | ipl | eng | eng | svc | adv }",color="#2E8A57" ]
+        lv0gen6 [ label="{6 | doc | doc | mes | srv | lib }",color="#268026" ]
+        lv0gen7 [ label="{7 | spt | mtc | mtc | isr | bro }",color="#448026" ]
+        lv0gen8 [ label="{8 | vld | vld | erp | dbg | app }",color="#806226" ]
+        lv0gen9 [ label="{9 | cmc | cmc | dcr | vtz | igr }",color="#804426" ]
+        lv0genLbl -> lv0gen0;
+        lv0gen0 -> lv0gen1;
+        lv0gen1 -> lv0gen2;
+        lv0gen2 -> lv0gen3;
+        lv0gen3 -> lv0gen4;
+        lv0gen4 -> lv0gen5;
+        lv0gen5 -> lv0gen6;
+        lv0gen6 -> lv0gen7;
+        lv0gen7 -> lv0gen8;
+        lv0gen8 -> lv0gen9;
+    }
+    #s1 -> lv1mdl
+    #s2 -> lv1mdl
+    #s3 -> lv1mdl
+    #s4 -> lv1mdl
+    #s5 -> lv1mdl
+    #s6 -> lv1mdl
+    #s7 -> lv1mdl
+    #lv1mdlphy -> mdlphyMdl
+    #lv1mdlety -> mdletyMdl
+    #lv1mdlpcd -> mdlpcdMdl
+    
+    #s0-> lv2aut
+    #s1-> lv2aut
+    #s2-> lv2aut
+    #s3-> lv2aut
+    #s7-> lv2aut
+    
+    #lv2aut -> lv2autLbl
+    #lv2prg -> lv2prgLbl
+    
+    subgraph lv4g{
+        rank=same;
+        lv4gen;
+        lv4genLbl [ label="sys",color="#802680" ]
+        lv4gen0 [ label="{0 | gen }",color="#802680" ]
+        lv4gen1 [ label="{1 | sys }",color="#752E99" ]
+        lv4gen2 [ label="{2 | equ }",color="#262680" ]
+        lv4gen3 [ label="{3 | aut }",color="#264480" ]
+        lv4gen4 [ label="{4 | ifc }",color="#268080" ]
+        lv4gen5 [ label="{5 | prg }",color="#2E8A57" ]
+        lv4gen6 [ label="{6 | mes }",color="#268026" ]
+        lv4gen7 [ label="{7 | mtc }",color="#448026" ]
+        lv4gen8 [ label="{8 | erp }",color="#806226" ]
+        lv4gen9 [ label="{9 | dcr }",color="#804426" ]
+        #lv4gen  -> lv4gen0
+        lv4genLbl  -> lv4gen0
+        lv4gen0 -> lv4gen1
+        lv4gen1 -> lv4gen2
+        lv4gen2 -> lv4gen3
+        lv4gen3 -> lv4gen4
+        lv4gen4 -> lv4gen5
+        lv4gen5 -> lv4gen6
+        lv4gen6 -> lv4gen7
+        lv4gen7 -> lv4gen8
+        lv4gen8 -> lv4gen9
+    }
+    subgraph lv1a{
+        rank=same;
+        lv1aut;
+        lv1autLbl [ label="sys",color="#752E99" ]
+        lv1aut0 [ label="{0 | aut }",color="#802680" ]
+        lv1aut1 [ label="{1 | sys }",color="#752E99" ]
+        lv1aut2 [ label="{2 | equ }",color="#262680" ]
+        lv1aut3 [ label="{3 | aut }",color="#264480" ]
+        lv1aut4 [ label="{4 | ifc }",color="#268080" ]
+        lv1aut5 [ label="{5 | prg }",color="#2E8A57" ]
+        lv1aut6 [ label="{6 | mes }",color="#268026" ]
+        lv1aut7 [ label="{7 | mtc }",color="#448026" ]
+        lv1aut8 [ label="{8 | erp }",color="#806226" ]
+        lv1aut9 [ label="{9 | dcr }",color="#804426" ]
+        #lv1aut  -> lv1aut0
+        lv1autLbl  -> lv1aut0
+        lv1aut0 -> lv1aut1
+        lv1aut1 -> lv1aut2
+        lv1aut2 -> lv1aut3
+        lv1aut3 -> lv1aut4
+        lv1aut4 -> lv1aut5
+        lv1aut5 -> lv1aut6
+        lv1aut6 -> lv1aut7
+        lv1aut7 -> lv1aut8
+        lv1aut8 -> lv1aut9
+    }
+    subgraph lv1t{
+        rank=same;
+        lv1vld;
+        lv1vldLbl [ label="vld",color="#806226" ]
+        lv1vld0 [ label="{0 | gen }",color="#802680" ]
+        lv1vld1 [ label="{1 | IHT }",color="#752E99" ]
+        lv1vld2 [ label="{2 | CMS }",color="#262680" ]
+        lv1vld3 [ label="{3 | FAT }",color="#264480" ]
+        lv1vld4 [ label="{4 | SAT }",color="#268080" ]
+        lv1vld5 [ label="{5 | IHTP}",color="#2E8A57" ]
+        lv1vld6 [ label="{6 | FATP}",color="#268026" ]
+        lv1vld7 [ label="{7 | SATP}",color="#448026" ]
+        lv1vld8 [ label="{8 | adt }",color="#806226" ]
+        lv1vld9 [ label="{9 | rpr }",color="#804426" ]
+        #lv1vld  -> lv1vld0
+        lv1vldLbl  -> lv1vld0
+        lv1vld0 -> lv1vld1
+        lv1vld1 -> lv1vld2
+        lv1vld2 -> lv1vld3
+        lv1vld3 -> lv1vld4
+        lv1vld4 -> lv1vld5
+        lv1vld5 -> lv1vld6
+        lv1vld6 -> lv1vld7
+        lv1vld7 -> lv1vld8
+        lv1vld8 -> lv1vld9
+    }
+    {
+        rank=same;
+        lv2mdl;
+        lv2mdlLbl [ label="phy",color="#752E99" ]
+        lv2mdl0 [ label="{0 | gen }",color="#802680" ]
+        lv2mdl1 [ label="{1 | CM  }",color="#752E99" ]
+        lv2mdl2 [ label="{2 | EM  }",color="#262680" ]
+        lv2mdl3 [ label="{3 | UT  }",color="#264480" ]
+        lv2mdl4 [ label="{4 | PC  }",color="#268080" ]
+        lv2mdl5 [ label="{5 | AR  }",color="#2E8A57" ]
+        lv2mdl6 [ label="{6 | ST  }",color="#268026" ]
+        lv2mdl7 [ label="{7 |     }",color="#448026" ]
+        lv2mdl8 [ label="{8 | ET  }",color="#806226" ]
+        lv2mdl9 [ label="{9 |     }",color="#804426" ]
+        #lv2mdlphy -> lv2mdl0
+        lv2mdlLbl -> lv2mdl0
+        lv2mdl0 -> lv2mdl1
+        lv2mdl1 -> lv2mdl2
+        lv2mdl2 -> lv2mdl3
+        lv2mdl3 -> lv2mdl4
+        lv2mdl4 -> lv2mdl5
+        lv2mdl5 -> lv2mdl6
+        lv2mdl6 -> lv2mdl7
+        lv2mdl7 -> lv2mdl8
+        lv2mdl8 -> lv2mdl9
+    }
+    {
+        rank=same;
+        lv4mdlphy;
+        mdlphyLbl [ label="phy",color="#262680" ]
+        mdlphy0 [ label="{0 | gen }",color="#802680" ]
+        mdlphy1 [ label="{1 | CM  }",color="#752E99" ]
+        mdlphy2 [ label="{2 | EM  }",color="#262680" ]
+        mdlphy3 [ label="{3 | UT  }",color="#264480" ]
+        mdlphy4 [ label="{4 | PC  }",color="#268080" ]
+        mdlphy5 [ label="{5 | AR  }",color="#2E8A57" ]
+        mdlphy6 [ label="{6 | ST  }",color="#268026" ]
+        mdlphy7 [ label="{7 |     }",color="#448026" ]
+        mdlphy8 [ label="{8 | ET  }",color="#806226" ]
+        mdlphy9 [ label="{9 |     }",color="#804426" ]
+        #lv1mdlphy -> mdlphy0
+        mdlphyLbl -> mdlphy0
+        mdlphy0 -> mdlphy1
+        mdlphy1 -> mdlphy2
+        mdlphy2 -> mdlphy3
+        mdlphy3 -> mdlphy4
+        mdlphy4 -> mdlphy5
+        mdlphy5 -> mdlphy6
+        mdlphy6 -> mdlphy7
+        mdlphy7 -> mdlphy8
+        mdlphy8 -> mdlphy9
+    }
+    #mdletyMdl [ label="mdl ety mdl",color="#752E99" ]
+    {
+        rank=same;
+        lv4mdlety;
+        mdletyLbl [ label="ety",color="#752E99" ]
+        mdlety0 [ label="{0 | gen }",color="#802680" ]
+        mdlety1 [ label="{1 | CME }",color="#752E99" ]
+        mdlety2 [ label="{2 | EME }",color="#262680" ]
+        mdlety3 [ label="{3 | UTE }",color="#264480" ]
+        mdlety4 [ label="{4 | PCE }",color="#268080" ]
+        mdlety5 [ label="{5 |     }",color="#2E8A57" ]
+        mdlety6 [ label="{6 |     }",color="#268026" ]
+        mdlety7 [ label="{7 |     }",color="#448026" ]
+        mdlety8 [ label="{8 |     }",color="#806226" ]
+        mdlety9 [ label="{9 |     }",color="#804426" ]
+        #lv1mdlety -> mdlety0
+        mdletyLbl -> mdlety0
+        mdlety0 -> mdlety1
+        mdlety1 -> mdlety2
+        mdlety2 -> mdlety3
+        mdlety3 -> mdlety4
+        mdlety4 -> mdlety5
+        mdlety5 -> mdlety6
+        mdlety6 -> mdlety7
+        mdlety7 -> mdlety8
+        mdlety8 -> mdlety9
+    }
+    #mdlpcdMdl [ label="mdl pcd mdl",color="#2E8A57" ]
+    {
+        rank=same;
+        lv4mdlpcd;
+        mdlpcdLbl [ label="pcd",color="#752E99" ]
+        mdlpcd0 [ label="{0 | gen }",color="#802680" ]
+        mdlpcd1 [ label="{1 | PH  }",color="#752E99" ]
+        mdlpcd2 [ label="{2 | OP  }",color="#262680" ]
+        mdlpcd3 [ label="{3 | UPCD}",color="#264480" ]
+        mdlpcd4 [ label="{4 | PCD }",color="#268080" ]
+        mdlpcd5 [ label="{5 |     }",color="#2E8A57" ]
+        mdlpcd6 [ label="{6 |     }",color="#268026" ]
+        mdlpcd7 [ label="{7 |     }",color="#448026" ]
+        mdlpcd8 [ label="{8 |     }",color="#806226" ]
+        mdlpcd9 [ label="{9 |     }",color="#804426" ]
+        #lv1mdlpcd -> mdlpcd0
+        mdlpcdLbl -> mdlpcd0
+        mdlpcd0 -> mdlpcd1
+        mdlpcd1 -> mdlpcd2
+        mdlpcd2 -> mdlpcd3
+        mdlpcd3 -> mdlpcd4
+        mdlpcd4 -> mdlpcd5
+        mdlpcd5 -> mdlpcd6
+        mdlpcd6 -> mdlpcd7
+        mdlpcd7 -> mdlpcd8
+        mdlpcd8 -> mdlpcd9
+    }
+    {
+        rank=same;
+        lv2aut;
+        lv2autLbl [ label="aut",color="#262680" ]
+        lv2aut0 [ label="{0 | gen }",color="#802680" ]
+        lv2aut1 [ label="{1 | dev }",color="#752E99" ]
+        lv2aut2 [ label="{2 | plc }",color="#262680" ]
+        lv2aut3 [ label="{3 | dcs }",color="#264480" ]
+        lv2aut4 [ label="{4 | ifc }",color="#268080" ]
+        lv2aut5 [ label="{5 | eng }",color="#2E8A57" ]
+        lv2aut6 [ label="{6 | mes }",color="#268026" ]
+        lv2aut7 [ label="{7 | mtc }",color="#448026" ]
+        lv2aut8 [ label="{8 | erp }",color="#806226" ]
+        lv2aut9 [ label="{9 | dcr }",color="#804426" ]
+        lv2autLbl  -> lv2aut0
+        #lv2aut  -> lv2aut0
+        lv2aut0 -> lv2aut1
+        lv2aut1 -> lv2aut2
+        lv2aut2 -> lv2aut3
+        lv2aut3 -> lv2aut4
+        lv2aut4 -> lv2aut5
+        lv2aut5 -> lv2aut6
+        lv2aut6 -> lv2aut7
+        lv2aut7 -> lv2aut8
+        lv2aut8 -> lv2aut9
+    }
+    {
+        rank=same;
+        lv2isr;
+        lv2isrLbl [ label="isr",color="#448026" ]
+        lv2isr0 [ label="{0 | gen }",color="#802680" ]
+        lv2isr1 [ label="{1 | sys }",color="#752E99" ]
+        lv2isr2 [ label="{2 | cpl }",color="#262680" ]
+        lv2isr3 [ label="{3 | dbs }",color="#264480" ]
+        lv2isr4 [ label="{4 | net }",color="#268080" ]
+        lv2isr5 [ label="{5 | svc }",color="#2E8A57" ]
+        lv2isr6 [ label="{6 | srv }",color="#268026" ]
+        lv2isr7 [ label="{7 | bro }",color="#448026" ]
+        lv2isr8 [ label="{8 | dbg }",color="#806226" ]
+        lv2isr9 [ label="{9 | vtz }",color="#804426" ]
+        lv2isrLbl  -> lv2isr0
+        lv2isr0 -> lv2isr1
+        lv2isr1 -> lv2isr2
+        lv2isr2 -> lv2isr3
+        lv2isr3 -> lv2isr4
+        lv2isr4 -> lv2isr5
+        lv2isr5 -> lv2isr6
+        lv2isr6 -> lv2isr7
+        lv2isr7 -> lv2isr8
+        lv2isr8 -> lv2isr9
+    }
+    {
+        rank=same;
+        lv3prg;
+        lv3prgLbl [ label="prg",color="#2E8A57" ]
+        lv3prg0 [ label="{0 | gen }",color="#802680" ]
+        lv3prg1 [ label="{1 | sys }",color="#752E99" ]
+        lv3prg2 [ label="{2 | cor }",color="#262680" ]
+        lv3prg3 [ label="{3 | dat }",color="#264480" ]
+        lv3prg4 [ label="{4 | tlg }",color="#268080" ]
+        lv3prg5 [ label="{5 | adv }",color="#2E8A57" ]
+        lv3prg6 [ label="{6 | lib }",color="#268026" ]
+        lv3prg7 [ label="{7 | bro }",color="#448026" ]
+        lv3prg8 [ label="{8 | app }",color="#806226" ]
+        lv3prg9 [ label="{9 | igr }",color="#804426" ]
+        #lv3prg  -> lv3prg0
+        lv3prgLbl  -> lv3prg0
+        lv3prg0 -> lv3prg1
+        lv3prg1 -> lv3prg2
+        lv3prg2 -> lv3prg3
+        lv3prg3 -> lv3prg4
+        lv3prg4 -> lv3prg5
+        lv3prg5 -> lv3prg6
+        lv3prg6 -> lv3prg7
+        lv3prg7 -> lv3prg8
+        lv3prg8 -> lv3prg9
+    }
+    subgraph lv3g{
+        rank=same;
+        lv3sys;
+        lv3sysLbl [ label="sys",color="#802680" ]
+        lv3sys0 [ label="{0 | gen }",color="#802680" ]
+        lv3sys1 [ label="{1 | sys }",color="#752E99" ]
+        lv3sys2 [ label="{2 | equ }",color="#262680" ]
+        lv3sys3 [ label="{3 | aut }",color="#264480" ]
+        lv3sys4 [ label="{4 | ifc }",color="#268080" ]
+        lv3sys5 [ label="{5 | prg }",color="#2E8A57" ]
+        lv3sys6 [ label="{6 | mes }",color="#268026" ]
+        lv3sys7 [ label="{7 | mtc }",color="#448026" ]
+        lv3sys8 [ label="{8 | erp }",color="#806226" ]
+        lv3sys9 [ label="{9 | dcr }",color="#804426" ]
+        #lv3sys  -> lv3sys0
+        lv3sysLbl  -> lv3sys0
+        lv3sys0 -> lv3sys1
+        lv3sys1 -> lv3sys2
+        lv3sys2 -> lv3sys3
+        lv3sys3 -> lv3sys4
+        lv3sys4 -> lv3sys5
+        lv3sys5 -> lv3sys6
+        lv3sys6 -> lv3sys7
+        lv3sys7 -> lv3sys8
+        lv3sys8 -> lv3sys9
+    }
+    {
+        rank=same;
+        lv0rgb;
+        
+        lv0rgbLbl [ label="rgb",color="#802680" ]
+        lv0rgb0 [ label="{0 |{{80|26|80}|{128| 38|128}} }",color="#802680" ]
+        lv0rgb1 [ label="{1 |{{75|2E|99}|{117| 46|153}}}",color="#752E99" ]
+        lv0rgb2 [ label="{2 |{{26|26|80}|{ 38| 38|128}}}",color="#262680" ]
+        lv0rgb3 [ label="{3 |{{26|44|80}|{ 38| 68|128}}}",color="#264480" ]
+        lv0rgb4 [ label="{4 |{{26|80|80}|{ 38|128|128}}}",color="#268080" ]
+        lv0rgb5 [ label="{5 |{{2E|8A|57}|{ 46|138| 87}}}",color="#2E8A57" ]
+        lv0rgb6 [ label="{6 |{{26|80|26}|{ 38|128| 38}}}",color="#268026" ]
+        lv0rgb7 [ label="{7 |{{44|80|26}|{ 68|128| 38}}}",color="#448026" ]
+        lv0rgb8 [ label="{8 |{{80|62|26}|{128| 98| 38}}}",color="#806226" ]
+        lv0rgb9 [ label="{9 |{{80|44|26}|{128| 68| 38}}}",color="#804426" ]
+        lv0rgbLbl -> lv0rgb0;
+        lv0rgb0 -> lv0rgb1;
+        lv0rgb1 -> lv0rgb2;
+        lv0rgb2 -> lv0rgb3;
+        lv0rgb3 -> lv0rgb4;
+        lv0rgb4 -> lv0rgb5;
+        lv0rgb5 -> lv0rgb6;
+        lv0rgb6 -> lv0rgb7;
+        lv0rgb7 -> lv0rgb8;
+        lv0rgb8 -> lv0rgb9;
+    }
+}

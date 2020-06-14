@@ -1,0 +1,245 @@
+{
+    "phy":{
+        "ifd":"phy",
+        "tag":"phy",
+        "name":"physical model",
+        "0":{"tag":"  ","name":"                "},
+        "1":{"tag":"CM","name":"control module  "},
+        "2":{"tag":"EM","name":"equipment module"},
+        "3":{"tag":"UT","name":"unit            "},
+        "4":{"tag":"PC","name":"process cell    "},
+        "5":{"tag":"AR","name":"area            "},
+        "6":{"tag":"ST","name":"site            "},
+        "7":{"tag":"  ","name":"                "},
+        "8":{"tag":"ET","name":"enterprise      "},
+        "9":{"tag":"  ","name":"                "}
+    },
+    "aut":{
+        "ifd":"aut",
+        "tag":"aut",
+        "name":"automation",
+        "0":{"tag":"gen","name":"general"},
+        "1":{"tag":"dev","name":"device"},
+        "2":{"tag":"plc","name":"programmable logic controller"},
+        "3":{"tag":"dcs","name":"distributed control system"},
+        "4":{"tag":"ifc","name":"interface"},
+        "5":{"tag":"eng","name":"engineering"},
+        "6":{"tag":"mes","name":"manufacturing execution system"},
+        "7":{"tag":"mtc","name":"maintenance"},
+        "8":{"tag":"erp","name":"enterprise   resource  planning"},
+        "9":{"tag":"dcr","name":"data center"}
+    },
+    "isr":{
+        "ifd":"isr",
+        "tag":"isr",
+        "name":"impl software report",
+        "0":{"tag":"gen","name":"general"},
+        "1":{"tag":"sys","name":"system"},
+        "2":{"tag":"cpl","name":"compiler"},
+        "3":{"tag":"dbs","name":"database system"},
+        "4":{"tag":"net","name":"network"},
+        "5":{"tag":"svc","name":"service"},
+        "6":{"tag":"srv","name":"server"},
+        "7":{"tag":"bro","name":"broker"},
+        "8":{"tag":"dbg","name":"debug"},
+        "9":{"tag":"vtz","name":"virtualization"}
+    },
+    "prg":{
+        "ifd":"prg",
+        "tag":"prg",
+        "name":"program",
+        "0":{"tag":"gen","name":"general                           "},
+        "1":{"tag":"sys","name":"sys lang shell                    "},
+        "2":{"tag":"cor","name":"c cpp SCL ST core lang            "},
+        "3":{"tag":"dat","name":"data lang sql xml xsl             "},
+        "4":{"tag":"tlg","name":"telegram data exchange stored proc"},
+        "5":{"tag":"adv","name":"advanced lang python java swig    "},
+        "6":{"tag":"lib","name":"library                           "},
+        "7":{"tag":"bro","name":"broker application srv SOA        "},
+        "8":{"tag":"app","name":"application                       "},
+        "9":{"tag":"igr","name":"integration                       "}
+    },
+    "vld":{
+        "ifd":"vld",
+        "tag":"vld",
+        "name":"validation",
+        "0":{"tag":"gen","name":"general                "},
+        "1":{"tag":"IHT","name":"in-house test          "},
+        "2":{"tag":"CMS","name":"commissioning          "},
+        "3":{"tag":"FAT","name":"factory acceptance test"},
+        "4":{"tag":"SAT","name":"site acceptance test   "},
+        "5":{"tag":"   ","name":"                       "},
+        "6":{"tag":"   ","name":"                       "},
+        "7":{"tag":"   ","name":"                       "},
+        "8":{"tag":"adt","name":"audit                  "},
+        "9":{"tag":"rpr","name":"report                 "}
+    },
+    "cmn":{
+        "ifd":"cmn",
+        "tag":"cmn",
+        "name":"communication",
+        "0":{"tag":"gen","name":"general                   "},
+        "1":{"tag":"mtg","name":"meeting minutes           "},
+        "2":{"tag":"iqy","name":"inquiry                   "},
+        "3":{"tag":"csp","name":"correspondence            "},
+        "4":{"tag":"org","name":"organization plan         "},
+        "5":{"tag":"off","name":"offer                     "},
+        "6":{"tag":"puc","name":"purchase memo             "},
+        "7":{"tag":"tsm","name":"transmittal shipping      "},
+        "8":{"tag":"org","name":"organization plan         "},
+        "9":{"tag":"rpr","name":"reports times notes travel"}
+    },
+    "sys":{
+        "ifd":"sys",
+        "tag":"sys",
+        "name":"system",
+        "0":{"tag":"gen","name":"general"},
+        "1":{"tag":"sys","name":"system"},
+        "2":{"tag":"equ","name":"equipment"},
+        "3":{"tag":"aut","name":"automation"},
+        "4":{"tag":"ifc","name":"interface"},
+        "5":{"tag":"prg","name":"program"},
+        "6":{"tag":"mes","name":"MES"},
+        "7":{"tag":"mtc","name":"maintenance"},
+        "8":{"tag":"erp","name":"ERP"},
+        "9":{"tag":"dcr","name":"data center"}
+    },
+    "tpl":{
+        "ifd":"tpl",
+        "tag":"tpl",
+        "name":"template",
+        "0":{"tag":"gen","name":""},
+        "1":{"tag":"sys","name":""},
+        "2":{"tag":"cpl","name":""},
+        "3":{"tag":"dbs","name":""},
+        "4":{"tag":"net","name":""},
+        "5":{"tag":"svc","name":""},
+        "6":{"tag":"srv","name":""},
+        "7":{"tag":"bro","name":""},
+        "8":{"tag":"dbg","name":""},
+        "9":{"tag":"vtz","name":""}
+    },
+    "lv0":{
+        "idf":"lv0",
+        "0":[
+            {"tag":"std","name":"standard"          },
+            {"tag":"gen","name":"general"           },
+            {"tag":"prj","name":"project"           }
+        ],
+        "1":[
+            {"tag":"sys","name":"system"            },
+            {"tag":"prc","name":"process"           },
+            {"tag":"dev","name":"device"            }
+        ],
+        "2":[
+            {"tag":"cor","name":"core"              },
+            {"tag":"cpl","name":"compiler"          },
+            {"tag":"equ","name":"equipment"         },
+            {"tag":"plc","name":"programmable logic controller"         },
+            {"tag":"spc","name":"specification"     }
+        ],
+        "3":[
+            {"tag":"dat","name":"data"              },
+            {"tag":"dcs","name":"distributed control center"          },
+            {"tag":"dsg","name":"design"            },
+            {"tag":"dbs","name":"data base system"  },
+            {"tag":"prg","name":"program"           }
+        ],
+        "4":[
+            {"tag":"ifc","name":"interface"         },
+            {"tag":"mdu","name":"module"            },
+            {"tag":"tlg","name":"telegram"          },
+            {"tag":"web","name":"web"               }
+        ],
+        "5":[
+            {"tag":"adv","name":"advanced"          },
+            {"tag":"eng","name":"engineering"       },
+            {"tag":"ipl","name":"implementation"    },
+            {"tag":"svc","name":"service"           }
+        ],
+        "6":[
+            {"tag":"doc","name":"documentation"     },
+            {"tag":"lib","name":"library"           },
+            {"tag":"srv","name":"server"            },
+            {"tag":"mes","name":"manufacturing execution system"           }
+        ],
+        "7":[
+            {"tag":"bro","name":"broker"            },
+            {"tag":"isr","name":"installer"         },
+            {"tag":"mtc","name":"maintenance"       },
+            {"tag":"spt","name":"support"           }
+        ],
+        "8":[
+            {"tag":"app","name":"application"       },
+            {"tag":"dbg","name":"debug"             },
+            {"tag":"erp","name":"enterprise resource planning"       },
+            {"tag":"vld","name":"validation"        }
+        ],
+        "9":[
+            {"tag":"cmc","name":"commercial"        },
+            {"tag":"dcr","name":"data center"       },
+            {"tag":"igr","name":"integration"       },
+            {"tag":"vtz","name":"virtualization"    }
+        ]
+    },
+    "lv1":{
+        "idf":"lv1",
+        "lv1_aut":{
+            "ifd":"lv2_aut",
+            "ref":"aut"
+        },
+        "lv1_phy":{
+            "ifd":"lv2_phy",
+            "ref":"phy"
+        },
+        "lv1_isr":{
+            "ifd":"lv2_isr",
+            "ref":"isr"
+        }
+    },
+    "lv2":{
+        "idf":"lv2",
+        "lv2_aut":{
+            "ifd":"lv2_aut",
+            "ref":"aut"
+        },
+        "lv2_phy":{
+            "ifd":"lv2_phy",
+            "ref":"phy"
+        },
+        "lv2_isr":{
+            "ifd":"lv2_isr",
+            "ref":"isr"
+        }
+    },
+    "lv3":{
+        "idf":"lv3",
+        "lv3_cmn":{
+            "ifd":"lv3_cmn",
+            "ref":"cmn"
+        },
+        "lv3_vld":{
+            "ifd":"lv3_vld",
+            "ref":"vld"
+        },
+        "lv3_prg":{
+            "ifd":"lv3_prg",
+            "ref":"prg"
+        },
+        "lv3_tpl":{
+            "ifd":"lv3_tpl",
+            "tag":"tpl",
+            "name":"template",
+            "0":{"tag":"gen","name":""},
+            "1":{"tag":"sys","name":""},
+            "2":{"tag":"cpl","name":""},
+            "3":{"tag":"dbs","name":""},
+            "4":{"tag":"net","name":""},
+            "5":{"tag":"svc","name":""},
+            "6":{"tag":"srv","name":""},
+            "7":{"tag":"bro","name":""},
+            "8":{"tag":"dbg","name":""},
+            "9":{"tag":"vtz","name":""}
+        }
+    }
+}
