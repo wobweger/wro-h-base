@@ -1,0 +1,16 @@
+msc {
+    a[label="thread 0"],l[label="lock"],b[label="thread 1"];
+    a=>l [label="acqSys(100)"];
+    l>>a [label="return 1"];
+    a note a [label="processing",textbgcolour="#7fff7f"];
+    ...;
+    b=>l [label="acqSys(100)"];
+    #--- [label="thread 0 perform processing"];
+    b note b [label="blocked",textbgcolour="#ff7f7f"];
+    ...;
+    a=>l [label="relSys()"];
+    l>>b [label="return 1"];
+    b note b [label="processing",textbgcolour="#7fff7f"];
+    ...;
+    b=>l [label="relSys()"];
+}

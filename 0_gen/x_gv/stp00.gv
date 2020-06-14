@@ -1,0 +1,12 @@
+digraph G {
+
+    s00 [label="0"]
+    s01 [label="1",style="filled",color="#551F66",fontcolor="#ffffff"]
+    s02 [label="2"]
+    s03 [label="<key> 3| {test|val}",shape="record"]
+    s04 [label="4| test|val",shape="record",style="filled",fillcolor="gray70"]
+    s00 -> s01
+    s00 -> s02
+    s02 -> s03:<key>
+    s01 -> s04
+}

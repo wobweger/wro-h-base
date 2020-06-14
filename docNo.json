@@ -44,20 +44,35 @@
         "8":{"tag":"dbg","name":"debug"},
         "9":{"tag":"vtz","name":"virtualization"}
     },
+    "cod":{
+        "ifd":"cod",
+        "tag":"cod",
+        "name":"program",
+        "0":{"tag":"gen","name":"general                            "},
+        "1":{"tag":"sys","name":"sys lang shell                     "},
+        "2":{"tag":"cor","name":"c cpp SCL ST core lang             "},
+        "3":{"tag":"prg","name":"program                            "},
+        "4":{"tag":"ifc","name":"interface                          "},
+        "5":{"tag":"eng","name":"engineering                        "},
+        "6":{"tag":"lib","name":"library                            "},
+        "7":{"tag":"bro","name":"broker application srv SOA         "},
+        "8":{"tag":"app","name":"application                        "},
+        "9":{"tag":"igr","name":"integration                        "}
+    },
     "prg":{
         "ifd":"prg",
         "tag":"prg",
         "name":"program",
         "0":{"tag":"gen","name":"general                           "},
         "1":{"tag":"sys","name":"sys lang shell                    "},
-        "2":{"tag":"cor","name":"c cpp SCL ST core lang            "},
-        "3":{"tag":"dat","name":"data lang sql xml xsl             "},
-        "4":{"tag":"tlg","name":"telegram data exchange stored proc"},
-        "5":{"tag":"adv","name":"advanced lang python java swig    "},
-        "6":{"tag":"lib","name":"library                           "},
-        "7":{"tag":"bro","name":"broker application srv SOA        "},
-        "8":{"tag":"app","name":"application                       "},
-        "9":{"tag":"igr","name":"integration                       "}
+        "2":{"tag":"cpl","name":"compiler"},
+        "3":{"tag":"dbs","name":"data base system"},
+        "4":{"tag":"web","name":"WEB"},
+        "5":{"tag":"svc","name":"service"},
+        "6":{"tag":"srv","name":"server"},
+        "7":{"tag":"bro","name":"broker"},
+        "8":{"tag":"dbg","name":"debug"},
+        "9":{"tag":"vtz","name":"virtualization"}
     },
     "vld":{
         "ifd":"vld",
