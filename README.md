@@ -16,6 +16,10 @@ covers topics/systems from device to ERP
 |8  | vld | apl | vld | dbg | erp |`#806226`  |`RGB(128,98,38)`   |
 |9  | cmc | igr | cmc | vtz | dcr |`#804426`  |`RGB(128,68,38)`   |
 
+![rgb](./v_img/docNoLv0.png)
+
+![rgb](./v_img/docNoRgb.png)
+
 ## engineering
 
 | topic             | name          | comment       |color      |color              |
