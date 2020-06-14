@@ -1,0 +1,32 @@
+digraph G {
+    node [
+        shape = "record"
+        style="filled"
+        fontsize=12
+        fontname="Arial bold"
+        fontcolor="#ffffff"
+        ]
+    {
+        rank=same;
+        
+        lv0gen0 [ label="{0 | prj | std | gen | gen | gen }",color="#802680" ]
+        lv0gen1 [ label="{1 | prc | sys | dev | sys | sys }",color="#752E99" ]
+        lv0gen2 [ label="{2 | spc | equ | plc | cpl | cor }",color="#262680" ]
+        lv0gen3 [ label="{3 | dsg | prg | dcs | dbs | dat }",color="#264480" ]
+        lv0gen4 [ label="{4 | mdu | ifc | ifc | web | tlg }",color="#268080" ]
+        lv0gen5 [ label="{5 | ipl | eng | eng | svc | adv }",color="#2E8A57" ]
+        lv0gen6 [ label="{6 | doc | doc | mes | srv | lib }",color="#268026" ]
+        lv0gen7 [ label="{7 | spt | mtc | mtc | isr | bro }",color="#448026" ]
+        lv0gen8 [ label="{8 | vld | vld | erp | dbg | app }",color="#806226" ]
+        lv0gen9 [ label="{9 | cmc | cmc | dcr | vtz | igr }",color="#804426" ]
+        lv0gen0 -> lv0gen1;
+        lv0gen1 -> lv0gen2;
+        lv0gen2 -> lv0gen3;
+        lv0gen3 -> lv0gen4;
+        lv0gen4 -> lv0gen5;
+        lv0gen5 -> lv0gen6;
+        lv0gen6 -> lv0gen7;
+        lv0gen7 -> lv0gen8;
+        lv0gen8 -> lv0gen9;
+    }
+}
