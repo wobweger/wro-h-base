@@ -1,0 +1,21 @@
+digraph WrkFlw {
+    rankdir=LR;
+    minlen=1;
+    edge [color="darkgreen",fontsize=10];
+    node[fontsize=10,style=rounded];
+    sBeg [label="",shape=circle,width=.15,style=filled,fixedsize=true];
+    sEnd [label="",shape=doublecircle,width=.15,style=filled];
+    {
+        node [shape=record];
+        s00 [label="{00|check \nlogged in}"];
+        s01 [label="{01|enter \n user \n pwd}"];
+        s05 [label="{05|perform \n data assignment}"];
+    }
+    sBeg    ->  s00;
+    s00     ->  s05;
+    s01     ->  s05;
+    s05     ->  sEnd;
+    edge [label="No",color="red4",fontsize=10];
+    s00     ->  s01;
+    s01     ->  s01;
+}

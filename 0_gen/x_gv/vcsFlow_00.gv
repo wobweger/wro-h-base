@@ -1,0 +1,120 @@
+digraph G {
+    #rankdir="LR";
+    size="10.0,10.0";
+    node [fontsize=16];
+    s00 [label="INZ",color="tan3",fontcolor="tan3"];
+    s01 [label="STG",color="seagreen",fontcolor="seagreen"];
+    s02 [label="RNG",color="seagreen",fontcolor="seagreen"];
+    s03 [label="HDG",color="royalblue"fontcolor="royalblue"];
+    s04 [label="HLD",color="royalblue"fontcolor="royalblue"];
+    s05 [label="RTG",color="seagreen",fontcolor="seagreen"];
+    s06 [label="PSG",color="skyblue3",fontcolor="skyblue3"];
+    s07 [label="PSD",color="skyblue3",fontcolor="skyblue3"];
+    s08 [label="SPG",color="indianred",fontcolor="indianred"];
+    s09 [label="SPD",color="indianred",fontcolor="indianred"];
+    s10 [label="ATG",color="mediumpurple",fontcolor="mediumpurple"];
+    s11 [label="ATD",color="mediumpurple",fontcolor="mediumpurple"];
+    s12 [label="FIN",color="palegreen3",fontcolor="palegreen3"];
+    s13 [label="SHG",color="orchid",fontcolor="orchid"];
+    s14 [label="SHD",color="orchid",fontcolor="orchid"];
+    s15 [label="IDL",color="lightblue3",fontcolor="lightblue3"];
+    s16 [label="IAV",color="lightblue4",fontcolor="lightblue4"];
+    
+    edge [style=""];
+    edge [label="SHT",fontsize=16,color="orchid",fontcolor="orchid"];
+    s00 -> s13;
+    s01 -> s13;
+    s02 -> s13;
+    s03 -> s13;
+    s04 -> s13;
+    s05 -> s13;
+    s06 -> s13;
+    s07 -> s13;
+    s08 -> s13;
+    s09 -> s13;
+    s10 -> s13;
+    s11 -> s13;
+    s12 -> s13;
+    s15 -> s13;
+    s16 -> s13;
+    
+    edge [style=""];
+    edge [label="ABT",fontsize=16,color="mediumpurple",fontcolor="mediumpurple"];
+    s00 -> s11;
+    s01 -> s10;
+    s02 -> s10;
+    s03 -> s10;
+    s04 -> s10;
+    s05 -> s10;
+    s06 -> s10;
+    s07 -> s10;
+    s08 -> s10;
+    s12 -> s10;
+    s15 -> s11;
+    s16 -> s11;
+    
+    edge [style=""];
+    edge [label="STA",fontsize=16,color="seagreen",fontcolor="seagreen"];
+    s00 -> s01;
+    s04 -> s05;
+    s06 -> s01;
+    s07 -> s02;
+    s09 -> s01;
+    s12 -> s01;
+    s15 -> s01;
+    s16 -> s01;
+    
+    edge [style=""];
+    edge [label="STP",fontsize=16,color="indianred",fontcolor="indianred"];
+    s00 -> s09;
+    s01 -> s08;
+    s02 -> s08;
+    s03 -> s08;
+    s04 -> s08;
+    s05 -> s08;
+    s06 -> s08;
+    s07 -> s08;
+    s12 -> s09;
+    s15 -> s09;
+    s16 -> s09;
+    
+    edge [style=""];
+    edge [label="DNE",fontsize=16,color="tan3",fontcolor="tan3"]
+    s00 -> s15;
+    s01 -> s02;
+    s02 -> s12;
+    s03 -> s04;
+    s05 -> s02;
+    s06 -> s07;
+    s08 -> s09;
+    s10 -> s11;
+    s12 -> s15;
+    s13 -> s14;
+    s15 -> s01;
+    
+    edge [style=""];
+    edge [label="RST",fontsize=16,color="plum",fontcolor="plum"];
+    s09 -> s00;
+    s11 -> s00;
+    s12 -> s00;
+    s15 -> s00;
+    s16 -> s00;
+    
+    edge [style=""];
+    edge [label="HLD",fontsize=16,color="royalblue",fontcolor="royalblue"]
+    s01 -> s03;
+    s02 -> s03;
+    s05 -> s03;
+    s06 -> s03;
+    s07 -> s03;
+    s12 -> s16;
+    s15 -> s16;
+    
+    edge [style=""];
+    edge [label="PSE",fontsize=16,color="skyblue3",fontcolor="skyblue3"]
+    s01 -> s06;
+    s02 -> s06;
+    s05 -> s06;
+    s15 -> s16;
+    s12 -> s16;
+}

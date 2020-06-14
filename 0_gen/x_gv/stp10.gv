@@ -1,0 +1,14 @@
+digraph G {
+    node [ 
+        shape="record",
+        style="filled",
+    ];
+
+    s00 [label="<lf>|0|<rg>"]
+    s01 [label="<lf>|1|<rg>",color="#551F66",fontcolor="#ffffff"]
+    s02 [label="<lf>|2|<rg>"]
+    s03 [label="<lf>|<key> 3|<rg>"]
+    s00:<rg> -> s01:<lf>
+    s01:<rg> -> s02:<lf>
+    s02:<rg> -> s03:<lf>
+}
