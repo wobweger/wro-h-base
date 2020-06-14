@@ -1,25 +1,49 @@
 # wro-h-base
 
 WRO's how-to base collection  
-covers topics/systems from device to ERP
+covers various topics/systems.
 
 |no | abr | abr | abr | abr | abr |color      |color              |
 |---|---  |---  |---  |---  |---  |---        |---                |
-|   |[eng][eng]|[cod][cod]|[prj][prj]| | [aut][aut] | |  |
-|0  | std | gen | prj | gen | gen |`#802680`  |`RGB(128,38,128)`  |
-|1  | sys | sys | prc | sys | dev |`#752E99`  |`RGB(117,46,153)`  |
-|2  | equ | cor | spc | cpl | plc |`#262680`  |`RGB(38,68,128)`   |
-|3  | prg | dat | dsg | dbs | dcs |`#264480`  |`RGB(38,68,128)`   |
-|4  | ifc | ifc | mdu | web | ifc |`#268080`  |`RGB(38,128,128)`  |
-|5  | eng | adv | ipl | svc | eng |`#2E8A57`  |`RGB(46,138,87)`   |
-|6  | doc | lib | doc | srv | clu |`#268026`  |`RGB(38,128,38)`   |
-|7  | mtc | bro | spt | bro | mtc |`#448026`  |`RGB(68,128,38)`   |
-|8  | vld | apl | vld | dbg | vld |`#806226`  |`RGB(128,98,38)`   |
-|9  | cmc | igr | cmc | vtz | cmc |`#804426`  |`RGB(128,68,38)`   |
+|   |[cod][cod]|[eng][eng]|[prj][prj]| [prg][prg] | [aut][aut] | |  |
+|[0][0_gen]  | gen | std | prj | gen | gen |`#802680`  |`RGB(128,38,128)`  |
+|[1][1_sys]  | sys | sys | prc | sys | dev |`#752E99`  |`RGB(117,46,153)`  |
+|[2][2_cor]  | cor | equ | spc | cpl | plc |`#262680`  |`RGB(38,68,128)`   |
+|[3][3_prg]  | prg | prg | dsg | dbs | dcs |`#264480`  |`RGB(38,68,128)`   |
+|[4][4_ifc]  | ifc | ifc | mdu | web | ifc |`#268080`  |`RGB(38,128,128)`  |
+|[5][5_eng]  | eng | eng | ipl | svc | eng |`#2E8A57`  |`RGB(46,138,87)`   |
+|[6][6_lib]  | lib | doc | doc | srv | clu |`#268026`  |`RGB(38,128,38)`   |
+|[7][7_bro]  | bro | mtc | spt | bro | mtc |`#448026`  |`RGB(68,128,38)`   |
+|[8][8_app]  | app | vld | vld | dbg | vld |`#806226`  |`RGB(128,98,38)`   |
+|[9][9_igr]  | igr | cmc | cmc | vtz | cmc |`#804426`  |`RGB(128,68,38)`   |
 
 ![rgb](./v_img/docNoLv0.png)
 
 ![rgb](./v_img/docNoRgb.png)
+
+| topic         | name          | comment       |
+| -----         | ----          | -------       |
+| [0_gen][0_gen]| general       |               |
+| [1_sys][1_sys]| system        |               |
+| [2_cor][2_cor]| core          |               |
+| [3_prg][3_prg]| program       |               |
+| [4_ifc][4_ifc]| interface     |               |
+| [5_eng][5_eng]| engineering   |               |
+| [6_lib][6_lib]| library       |               |
+| [7_bro][7_bro]| broker        |               |
+| [8_app][8_app]| application   |               |
+| [9_igr][9_igr]| integration   |               |
+
+[0_gen]: ./0_gen/README.md
+[1_sys]: ./1_sys/README.md
+[2_cor]: ./2_cor/README.md
+[3_prg]: ./3_prg/README.md
+[4_ifc]: ./4_ifc/README.md
+[5_eng]: ./5_eng/README.md
+[6_lib]: ./6_lib/README.md
+[7_bro]: ./7_bro/README.md
+[8_app]: ./8_app/README.md
+[9_igr]: ./9_igr/README.md
 
 ## engineering
 
@@ -125,7 +149,7 @@ covers topics/systems from device to ERP
 |[8_dbg][prg_8_dbg] |debug          |               |`#806226`  |`RGB(128,98,38)`   |
 |[9_vtz][prg_9_vtz] |virtualization |               |`#804426`  |`RGB(128,68,38)`   |
 
-[prg]: ./tpl/cod/README.md
+[prg]: ./tpl/prg/README.md
 [prg_0_gen]: ./tpl/prg/0_gen/README.md
 [prg_1_sys]: ./tpl/prg/1_sys/README.md
 [prg_2_cpl]: ./tpl/prg/2_cpl/README.md

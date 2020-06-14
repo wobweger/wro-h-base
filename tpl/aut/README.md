@@ -1,4 +1,4 @@
-## automation
+# automation
 
 
 | topic             | name          | comment       |color      |color              |
@@ -8,7 +8,7 @@
 | [2_equ][aut_2_equ]| equipment     |               |`#262680`  |`RGB(38,68,128)`   |
 | [3_dcs][aut_3_dcs]| program       |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_itc][aut_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
-| [5_aut][aut_5_eng]| autineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |
+| [5_aut][aut_5_eng]| engineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |
 | [6_clu][aut_6_clu]| could         |               |`#268026`  |`RGB(38,128,38)`   |
 | [7_mtc][aut_7_mtc]| maintenance   |               |`#448026`  |`RGB(68,128,38)`   |
 | [8_vld][aut_8_vld]| validation    |               |`#806226`  |`RGB(128,98,38)`   |

@@ -1,4 +1,4 @@
-## project
+# project
 
 | topic             | name          | comment       |color      |color              |
 | -----             | ----          | -------       |---        |---                |
@@ -13,14 +13,14 @@
 | [8_vld][prj_8_vld]| validation    |               |`#806226`  |`RGB(128,98,38)`   |
 | [9_cmc][prj_9_cmc]| commercial    |               |`#804426`  |`RGB(128,68,38)`   |
 
-[prj_0_prj]: ./tpl/prj/0_prj/README.md
-[prj_1_prc]: ./tpl/prj/1_prc/README.md
-[prj_2_spc]: ./tpl/prj/2_spc/README.md
-[prj_3_dsg]: ./tpl/prj/3_dsg/README.md
-[prj_4_mdu]: ./tpl/prj/4_mdu/README.md
-[prj_5_ipl]: ./tpl/prj/5_ipl/README.md
-[prj_6_doc]: ./tpl/prj/6_doc/README.md
-[prj_7_spt]: ./tpl/prj/7_spt/README.md
-[prj_8_vld]: ./tpl/prj/8_vld/README.md
-[prj_9_cmc]: ./tpl/prj/9_cmc/README.md
+[prj_0_prj]: ./0_prj/README.md
+[prj_1_prc]: ./1_prc/README.md
+[prj_2_spc]: ./2_spc/README.md
+[prj_3_dsg]: ./3_dsg/README.md
+[prj_4_mdu]: ./4_mdu/README.md
+[prj_5_ipl]: ./5_ipl/README.md
+[prj_6_doc]: ./6_doc/README.md
+[prj_7_spt]: ./7_spt/README.md
+[prj_8_vld]: ./8_vld/README.md
+[prj_9_cmc]: ./9_cmc/README.md
 
