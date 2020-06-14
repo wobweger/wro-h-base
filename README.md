@@ -262,7 +262,7 @@ validation
 |8   | adt |audit                       |               |
 |9   | rpr |report                      |               |
 
-### level 3_s88{#lv3_s88}
+### level 3_mdlPhy{#lv3_mdlPhy}
 
 hierarchy
 
@@ -279,6 +279,8 @@ hierarchy
 |8   |ET   |enterprise                          |               |
 |9   |     |                                    |               |
 
+### level 3_mdlEty{#lv3_mdlEty}
+
 | no | abr | name                               | comment       |
 |--- | ----| -------                            | -------       |
 |0   |      |                                   |               |
@@ -291,6 +293,8 @@ hierarchy
 |7   |      |                                   |               |
 |8   |      |                                   |               |
 |9   |      |                                   |               |
+
+### level 3_mdlPcd{#lv3_mdlPcd}
 
 | no | abr | name                               | comment       |
 |--- | ----| -------                            | -------       |
