@@ -1,0 +1,6 @@
+code;name;en_name;;;;;;;
+C-BIMSCHULJAHR-0;Schuljahr des Abschlusses;Year of graduation;;;;;;;
+C-BIMAUSBILDN4-0;Abgeschlossene Ausbildung (Ebene +3);Level of education (Level +3);;;;;;;
+C-BIMSEX-0;Geschlecht;Sex;;;;;;;
+C-BIMAMSTBIM18M6-0;Arbeitsmarktstatus nach 18 Monaten (Ebene +5);Labour market status after 18 months (Level +5);;;;;;;
+F-BIBER_ABSCHL_EXTERN;Anzahl Personen;Number of records F-BIBER_ABSCHL_EXTERN;;;;;;;

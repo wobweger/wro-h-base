@@ -1,0 +1,7 @@
+code;name;;en_name;de_desc;de_link;en_desc;en_link;de_syn;en_syn
+ERVEXTAMST4-10;Aktiv erwerbstätig;;Employed (at work);;;;;;
+ERVEXTAMST4-20;Temporär abwesend;;Temporarily not at work;;;;;;
+ERVEXTAMST4-30;Arbeitslos;;Unemployed;;;;;;
+ERVEXTAMST4-40;Pensionsbezug;;Persons receiving a pension;;;;;;
+ERVEXTAMST4-50;Schülerinnen, Schüler, Studierende;;Students;;;;;;
+ERVEXTAMST4-90;Sonstige Nicht-Erwerbspersonen;;Other currently not economically active persons;;;;;;
