@@ -45,6 +45,21 @@ covers various topics/systems.
 [8_app]: ./8_app/README.md
 [9_igr]: ./9_igr/README.md
 
+## links
+
+link collection
+
+| who       | what                  | where        |
+| :----:    | ----:                 |---           |
+| WRO       | links in lists        | [quick](./quick_wro.md) |
+| WRO       | tabular links         | [links](./links_wro.md) |
+
+|group|how to| quick| link |  |
+| --- | --- | --- | --- |---|
+|[mark down][md]  |[cheat][mdCheat] |[github][mdGitHub]|
+|[pandoc][pandoc] |
+|[vscode][vscode] |[0_gen](./0_gen/vscode.md)| [doc][vscodeDoc]|[github][vscodeGitHub] | [var][vscodeRefVar] |
+
 ## engineering
 
 [eng][eng]
@@ -323,3 +338,23 @@ hierarchy
 |7   |bro   |broker application srv SOA         |               |
 |8   |app   |application                        |               |
 |9   |igr   |integration                        |               |
+
+## contributing
+
++ [digital ethics](./0_gen/QT0418372ENN.en.pdf)
+
+![WOL](./v_img/5_elements_TanmayVora_Framed_in_Orange.png)
+
+
+
+[md]: https://www.markdownguide.org/
+[mdCheat]: https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet
+[mdGitHub]: https://guides.github.com/features/mastering-markdown/
+
+[pandoc]: http://pandoc.org/getting-started.html
+
+
+[vscode]: https://code.visualstudio.com/
+[vscodeDoc]: https://code.visualstudio.com/docs
+[vscodeGitHub]: https://github.com/Microsoft/vscode
+[vscodeRefVar]: https://code.visualstudio.com/docs/editor/variables-reference

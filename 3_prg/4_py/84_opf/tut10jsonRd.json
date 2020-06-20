@@ -1,0 +1,6 @@
+{
+    "sSqlBth": "SELECT ", 
+    "sSqlMsg": "SELECT * FROM msg",
+    "sSqlStp": "SELECT",
+    "sSqlMulti": "SELECT * FROM     msg"
+}
