@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type = "text/xsl" href = "CMT1.xsl"?> 
+<Document xxmlns="http://www.siemens.com/automation/2005/SimaticML">
+	<!--DocumentInfo FormatVersion="2.3" Tool="AI" UserName="z003mvtz" Created="2019-05-14T10:28:57"/-->
+	<Project Name="AS_CIP_SIP" ID="OD00112001:00000176:00000000:00000000" Version="V3.0" ExportScope="Comos PT;V2.3.8;3018080">
+		<AttributeList>
+			<Attribute Name="Author">
+				<Value></Value>
+			</Attribute>
+			<Attribute Name="Comment">
+				<Value></Value>
+			</Attribute>
+		</AttributeList>
+	</Project>
+</Document>

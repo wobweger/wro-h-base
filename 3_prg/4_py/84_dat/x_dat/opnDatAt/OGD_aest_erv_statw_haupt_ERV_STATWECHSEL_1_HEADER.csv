@@ -1,0 +1,7 @@
+code;name;en_name;;;;;;;
+C-ERVZEITPUNKT3-0;Jahr;Year;;;;;;;
+C-ERVAMSTVORHER4-0;Arbeitsmarktstatus vor dem Statuswechsel (Ebene +3);Activity status before the status change (Level +3);;;;;;;
+C-ERVAMST4-0;Arbeitsmarktstatus nach dem Statuswechsel (Ebene +3);Activity status after the status change (Level +3);;;;;;;
+C-ERVAGE5-0;Alter (Ebene +4);Age (Level +4);;;;;;;
+C-ERVSEX1-0;Geschlecht;Sex;;;;;;;
+F-ERV_STAT_HAUPT;Anzahl Statuswechsel;Number of status changes;;;;;;;
