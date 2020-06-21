@@ -1,4 +1,4 @@
-## maintenacne
+## maintenance
 
 This section/folder describe maintenance.
 

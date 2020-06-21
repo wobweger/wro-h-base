@@ -109,14 +109,14 @@
         "tag":"sys",
         "name":"system",
         "0":{"tag":"gen","name":"general"},
-        "1":{"tag":"sys","name":"system"},
+        "1":{"tag":"dev","name":"device"},
         "2":{"tag":"equ","name":"equipment"},
         "3":{"tag":"aut","name":"automation"},
         "4":{"tag":"ifc","name":"interface"},
-        "5":{"tag":"prg","name":"program"},
-        "6":{"tag":"mes","name":"MES"},
+        "5":{"tag":"pkg","name":"package"},
+        "6":{"tag":"clu","name":"could"},
         "7":{"tag":"mtc","name":"maintenance"},
-        "8":{"tag":"erp","name":"ERP"},
+        "8":{"tag":"arv","name":"archive"},
         "9":{"tag":"dcr","name":"data center"}
     },
     "tpl":{

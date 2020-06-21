@@ -100,7 +100,7 @@ link collection
 | [2_equ][aut_2_equ]| equipment     |               |`#262680`  |`RGB(38,68,128)`   |
 | [3_dcs][aut_3_dcs]| program       |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_itc][aut_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
-| [5_aut][aut_5_eng]| autineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |
+| [5_aut][aut_5_eng]| engineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |
 | [6_clu][aut_6_clu]| could         |               |`#268026`  |`RGB(38,128,38)`   |
 | [7_mtc][aut_7_mtc]| maintenance   |               |`#448026`  |`RGB(68,128,38)`   |
 | [8_vld][aut_8_vld]| validation    |               |`#806226`  |`RGB(128,98,38)`   |
@@ -117,6 +117,36 @@ link collection
 [aut_7_mtc]: ./tpl/aut/7_mtc/README.md
 [aut_8_vld]: ./tpl/aut/8_vld/README.md
 [aut_9_cmc]: ./tpl/aut/9_cmc/README.md
+
+## system
+
+[sys][sys]
+
+| topic             | name          | comment       |color      |color              |
+| -----             | ----          | -------       |---        |---                |
+| [0_gen][sys_0_gen]| general       |               |`#802680`  |`RGB(128,38,128)`  |
+| [1_dev][sys_1_dev]| device        |               |`#752E99`  |`RGB(117,46,153)`  |
+| [2_equ][sys_2_equ]| equipment     |               |`#262680`  |`RGB(38,68,128)`   |
+| [3_aut][sys_3_aut]| automation    |               |`#264480`  |`RGB(38,68,128)`   |
+| [4_ifc][sys_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
+| [5_pkg][sys_5_pkg]| packages      |               |`#2E8A57`  |`RGB(46,138,87)`   |
+| [6_clu][sys_6_clu]| could         |               |`#268026`  |`RGB(38,128,38)`   |
+| [7_mtc][sys_7_mtc]| maintenance   |               |`#448026`  |`RGB(68,128,38)`   |
+| [8_arv][sys_8_arv]| archive       |               |`#806226`  |`RGB(128,98,38)`   |
+|[9_dcr][sys_9_dcr] |data center    |               |`#804426`  |`RGB(128,68,38)`   |
+
+[sys]: ./tpl/sys/README.md
+[sys_0_gen]: ./tpl/sys/0_gen/README.md
+[sys_1_dev]: ./tpl/sys/1_dev/README.md
+[sys_2_equ]: ./tpl/sys/2_equ/README.md
+[sys_3_aut]: ./tpl/sys/3_aut/README.md
+[sys_4_ifc]: ./tpl/sys/4_ifc/README.md
+[sys_5_pkg]: ./tpl/sys/5_pkg/README.md
+[sys_6_clu]: ./tpl/sys/6_clu/README.md
+[sys_7_mtc]: ./tpl/sys/7_mtc/README.md
+[sys_8_arv]: ./tpl/sys/8_arv/README.md
+[sys_9_dcr]: ./tpl/sys/9_dcr/README.md
+
 
 ## coding
 
@@ -146,6 +176,7 @@ link collection
 [cod_7_bro]: ./tpl/cod/7_bro/README.md
 [cod_8_app]: ./tpl/cod/8_app/README.md
 [cod_9_igr]: ./tpl/cod/9_igr/README.md
+
 
 ## programming
 
