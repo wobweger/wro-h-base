@@ -58,6 +58,15 @@ for i in six.moves.xrange(1,10):
   print(i)
 ```
 
+### tutorial
+
++ how to, located in repo
+  + [base](stpPy01_base.ipynb)
+  + [regex](stpPy02_regex.ipynb) , [regEx00](regEx00.ipynb)
+  + [time](stpPy03_time.ipynb)
+  + [WebScrap](WebScrap.ipynb)
+  + [time](WebScrapBeautifulSoup.ipynb)
+
 ### packaging
 
 + [tutorial](https://packaging.python.org/tutorials/packaging-projects/#classifiers)
