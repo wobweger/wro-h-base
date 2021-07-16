@@ -4,10 +4,6 @@ This section/folder contain integration information.
 
 :construction:
 
-this section covers MSC topics.
-
-+ [BioPhorum][BioPhorum] , [iMeet][BioPhorum_iMeet]
-
 ### knowledge
 
 collection of knowledge providing organizations.
@@ -16,7 +12,9 @@ collection of knowledge providing organizations.
 
 |grp| name
 | --- | --- |
+| BPG  | [BioPhorum][BioPhorum] , [iMeet][BioPhorum_iMeet] |
 | ACM  | [acm](http://www.acm.org/) , [dl](http://dl.acm.org/) , [myACM](https://myacm.acm.org/dashboard.cfm?svc=curr) . [cacm](http://cacm.acm.org/)
+| ESA  | [ESA](https://essr.esa.int/)
 | IEEE |[IEEE](https://www.ieee.org/) , [collaboration](https://ieee-collabratec.ieee.org/)
 | IEEE.CS |[IEEE](https://www.computer.org/) , [.login](http://www.computer.org/portal/web/guest/home) , [csdl](https://www.computer.org/csdl/home) 
 | societies | [IAS](https://ias.ieee.org/) , [mgn](https://ieeexplore.ieee.org/xpl/RecentIssue.jsp?punumber=2943) , [Industry Applications Society Resource Center](https://resourcecenter.ias.ieee.org/)
@@ -46,6 +44,8 @@ free accessible git servers
 
 + [ACDH](https://www.oeaw.ac.at/acdh/)
   + [digital humanities](http://www.digital-humanities.at/en)
+  + [Schnitzler](https://schnitzler.acdh.oeaw.ac.at/)
+  + [wroACDHitp202003](https://github.com/wobweger/wroACDHitp202003) , [GoogleDrive](https://drive.google.com/drive/folders/1qOIcFVc9RVIO3tkh3m2P_z7vdrsKHNTU)
 + [DARIAH-EU](https://www.dariah.eu/)
 + [clarin](https://www.clarin.eu/)
 + [openAIRE](https://www.openaire.eu/)
@@ -72,10 +72,30 @@ free accessible git servers
 + [Staatsbibliothek zu Berlin](https://staatsbibliothek-berlin.de/)
   + [Beethoven](https://blog.sbb.berlin/beethoven-pur-ausstellung-vom-11-3-bis-30-4-2020-unter-den-linden-8/)
 + [cambridge core textbooks](https://www.cambridge.org/core/what-we-publish/textbooks)
++ [zooniverse](https://www.zooniverse.org/lab)
++ [FromThePage](https://fromthepage.com/)
++ [LOC](https://loc.gov/)
+  + [crowd](https://crowd.loc.gov/)
++ [DouglassDay](https://douglassday.org/)
 
 ### freeCode
 
 + [free code][freeCode]
+
+### sketches
+
++ [FranziMau](https://franzimachtdas.wordpress.com/sketches/)
+
+### lectures
+
++ [stackskills](https://stackskills.com/)
++ [whizlabs](https://www.whizlabs.com/)
++ [zenva](https://academy.zenva.com/product/humble-javascript-bundle-tier-3/)
++ [zdnet](https://academy.zdnet.com/)
+
+### fair/event
+
++ [dechema](https://dechema.converia.de/)
 
 [archOrg]: https://archive.org/
 [MDPI]: https://www.mdpi.com/

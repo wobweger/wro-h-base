@@ -56,6 +56,65 @@ more on github
 [msvscDoc]: https://code.visualstudio.com/docs?start=true
 [msvscSCM]: https://code.visualstudio.com/docs/editor/versioncontrol
 
+### LaTex
+
+[TUG][latexTUG] distribution list
+
+**install**
+
+```shell
+yum whatprovides latex
+```
+
+```
+exlive-latex-7:20180414-14.el8.noarch : A TeX macro package that defines LaTeX
+Repo        : AppStream
+Matched from:
+Filename    : /usr/bin/latex
+```
+
+```shell
+yum install texlive-latex
+```
+
+```shell
+CentOS-8 - AppStream                            1.3 kB/s | 4.3 kB     00:03    
+CentOS-8 - Base                                  16 kB/s | 3.9 kB     00:00    
+CentOS-8 - Extras                               6.4 kB/s | 1.5 kB     00:00    
+Extra Packages for Enterprise Linux Modular 8 -  22 kB/s |  22 kB     00:01    
+Extra Packages for Enterprise Linux Modular 8 - 131 kB/s | 154 kB     00:01    
+Extra Packages for Enterprise Linux 8 - x86_64   26 kB/s |  22 kB     00:00    
+Extra Packages for Enterprise Linux 8 - x86_64  1.7 MB/s | 7.1 MB     00:04    
+Dependencies resolved.
+================================================================================
+ Package                   Arch      Version                 Repository    Size
+================================================================================
+Installing:
+ texlive-latex             noarch    7:20180414-14.el8       AppStream     13 M
+Installing dependencies:
+ perl-Text-Unidecode       noarch    1.30-5.el8              AppStream    149 k
+ perl-XML-XPath            noarch    1.42-3.el8              AppStream     88 k
+ texlive-algorithms        noarch    7:20180414-14.el8       AppStream    316 k
+
+
+ texlive-xunicode          noarch    7:20180414-14.el8       AppStream     51 k
+ texlive-zapfding          noarch    7:20180414-14.el8       AppStream     72 k
+ zziplib                   x86_64    0.13.68-8.el8           AppStream     91 k
+
+Transaction Summary
+================================================================================
+Install  104 Packages
+
+Total download size: 143 M
+Installed size: 245 M
+Is this ok [y/N]: y
+Downloading Packages:
+(1/104): perl-XML-XPath-1.42-3.el8.noarch.rpm   354 kB/s |  88 kB     00:00    
+(2/104): perl-Text-Unidecode-1.30-5.el8.noarch. 506 kB/s | 149 kB     00:00    
+```
+
+[latexTUG]: http://www.tug.org/interest.html#free
+
 ### git
 
 + [how-to](./git.md)
