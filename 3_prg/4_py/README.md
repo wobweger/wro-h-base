@@ -114,6 +114,34 @@ builder
 pip install pysimplegui
 ```
 
+## tesseract OCR
+
+HP/Google released OCR under `Apache 2.0 license`
+
++ [tesseract](https://github.com/tesseract-ocr/tesseract)
++ [UB Mannheim](https://github.com/UB-Mannheim/tesseract/wiki)
+  also tesserAct need be installed
++ [pypi](https://pypi.org/project/pytesseract/)
+
+```shell
+pip install pytesseract
+pip install tesseract
+pip install opencv-python
+```
+
+python 3.8 may need additional opencv package
+
+```shell
+pip install opencv-contrib-python
+```
+
+## opencv
+
+```shell
+pip install opencv-python
+pip install opencv-contrib-python
+```
+
 ### django
 
 django is a web-UI for python code.
