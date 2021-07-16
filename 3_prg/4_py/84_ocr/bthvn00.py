@@ -1,3 +1,27 @@
+#----------------------------------------------------------------------------
+# Name:         bthvn00.py
+# Purpose:      uses tesseract OCR to process single file
+#               or performs batch file process on folder (recursively)
+#               openCV or integrated image reader (suffix Raw) can be utilized
+#               str or xml outputs are supported
+#
+#               used lindworm additional basic framework for 
+#               easy command line argument parsing, logging
+#               
+# Setup:
+#               pip install pytesseract
+#               pip install tesseract
+#               pip install opencv-python
+#               pip install lindworm
+#
+# Author:       Walter Obweger
+#
+# Created:      20210716
+# CVS-ID:       $Id$
+# Copyright:    (c) 2021 by Walter Obweger
+# Licence:      MIT license
+#----------------------------------------------------------------------------
+
 import sys
 import os
 import fnmatch
@@ -110,7 +134,7 @@ def execMain(sOutDN          ='./out',
     
     # +++++ beg:init
     iRet=0
-    oLog=ldmUtilLog()
+    oLog=ldmUtilLog('ocr')
     oLog.logInf('sImgDN:%r',sImgDN)
     oLog.logInf('sOutDN:%r',sOutDN)
     oLog.logInf('sKind:%r',sKind)
@@ -219,13 +243,20 @@ def main(args=None):
         logUtil.logInit(sLogFN,iLevel=logging.DEBUG)
     #else:
     #    return 0                            # 20200602 wro:help on arguments called
+    oLog=ldmUtilLog('main')
     # ----- end:prepare logging
     # +++++ beg:setup pytesserAct tesserAct OCR installation path
-    sPathTesserAct=getattr(oArg,"sTesserActDN")
-    pytesseract.pytesseract.tesseract_cmd = sPathTesserAct
-    if iVerbose>5:
-        print(pytesseract.get_languages(config=''))
-    # ----- end:setup pytesserAct tesserAct OCR installation path
+    try:
+        sPathTesserAct=getattr(oArg,"sTesserActDN")
+        pytesseract.pytesseract.tesseract_cmd = sPathTesserAct
+        if oArg.iVerbose>5:
+            print(pytesseract.get_languages(config=''))
+    except:
+        oLog.logTB()
+        sys.stderr.write('\nargument tesserActDN is required, aborting processing\n')
+        sys.stderr.write('panic\n')
+        return -1
+    # +++++ beg:perform main
     # +++++ beg:perform main
     iCLI=getattr(oArg,"iCLI",1)
     if iCLI==0:
