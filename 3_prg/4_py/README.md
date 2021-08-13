@@ -109,7 +109,6 @@ builder
 + wxGlade
 + boa-constructor (obsolete)
 
-
 ```shell
 pip install pysimplegui
 ```
@@ -213,7 +212,6 @@ python package index
 + [test pypi](https://test.pypi.org/)
 + [API token](https://test.pypi.org/help/#apitoken)
 
-
 additional tools
 
 + [FreeOTP](https://freeotp.github.io/)
@@ -222,10 +220,9 @@ additional tools
   upload to pypi
   + [github](https://github.com/pypa/twine)
 
-
 example on lindworm
 
-+ build 
++ build
 + [tst](https://test.pypi.org/project/lindworm/)
 + [prd](https://pypi.org/project/lindworm/)
 

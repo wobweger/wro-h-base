@@ -52,6 +52,7 @@ def ocr(sInFN,
             sOtFN=None,
             sKind=None,
             oLog=None,
+            iShow=0,
             iVerbose=1):
     try:
         # +++++ beg:init
@@ -61,6 +62,7 @@ def ocr(sInFN,
             bLog=1
         # ----- end:init
         # +++++ beg:use openCV
+        cKey=0
         iUseCV=0
         if sKind is None:
             iUseCV=1
@@ -72,6 +74,24 @@ def ocr(sInFN,
             oLog.logInf('ocr:beg sOnFN:%r sOtFN:%r',sInFN,sOtFN)
             img_cv = cv2.imread(sInFN)
             img_rgb = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
+            if iShow>1:
+                # +++++ beg:
+                sTitle="org:%r"%(sInFN)
+                cv2.imshow(sTitle, img_cv)
+                sTitle="rgb:%r"%(sInFN)
+                cv2.imshow(sTitle, img_rgb)
+                cKey=cv2.waitKey(0)
+                #cv2.destroyAllWindows()
+                #print("cKey:%r"%(cKey))
+                #print("cKey:%r %d"%(cKey,ord(cKey[0])))
+                # ----- end:
+            elif iShow>0:
+                # +++++ beg:
+                sTitle="rgb:%r"%(sInFN)
+                cv2.imshow(sTitle, img_rgb)
+                cKey=cv2.waitKey(0)
+                #cv2.destroyAllWindows()
+                # ----- end:
         # ----- end:use openCV
         # +++++ beg:optical character recognition
         iOutBin=0
@@ -116,6 +136,18 @@ def ocr(sInFN,
             # ----- end:write to file
         # ----- end:output
         iRet=1
+        # +++++ beg:close CV windows
+        if iUseCV>0:
+            if iShow>0:
+                # +++++ beg:
+                #cKey=cv2.waitKey(0)
+                cv2.destroyAllWindows()
+                if iVerbose>5:
+                    print("cKey:%r"%(cKey))
+                if cKey==27:    # ESC pressed
+                    iRet=11
+                # ----- end:
+        # ----- end:close CV windows
     except:
         if oLog is not None:
             oLog.logTB()
@@ -128,6 +160,7 @@ def execMain(sOutDN          ='./out',
             sImgDN          ='.',
             sImgFN          =None,
             sKind           =None,
+            iShow           =0,
             iVerbose        =10):
     # +++++ beg:
     # ----- end:
@@ -146,7 +179,7 @@ def execMain(sOutDN          ='./out',
             iRet+=1
         else:
             # +++++ beg:prepare batch processing
-            lExt=['png','jpg','jpeg']
+            lExt=['png','jpg','jpeg','JPG']
             iLenImgDN=len(sImgDN)
             oLog.logDbg('execMain:sImgDN:%r iLenImgDN:%d',sImgDN,iLenImgDN)
             # ----- end:prepare batch processing
@@ -172,11 +205,14 @@ def execMain(sOutDN          ='./out',
                             oLog.logDbg('    sTmpFN:%r sOutFN:%r',sTmpFN,sOutFN)
                             # ----- end:generate output filename
                             # +++++ beg:perform ocr
-                            ocr(sTmpFN,
+                            iR=ocr(sTmpFN,
                                     sOtFN=sOutFN,
                                     sKind=sKind,
                                     oLog=oLog,
+                                    iShow=iShow,
                                     iVerbose=iVerbose)
+                            if iR==11:  # ESC pressed on image show
+                                iShow=0
                             # ----- end:perform ocr
                             iRet+=1
                         # ----- end:check extension, valid image file
@@ -219,6 +255,10 @@ def main(args=None):
             sDft='str',
             sHlp='conversion output format',
             sMeta='str|xml|str|xmlRaw')
+    oArg.addOpt('iShow',
+            sDft=0,
+            sHlp='show images',
+            sMeta='0|1')
     oArg.addOpt('sTesserActDN',
             sDft='c:/apps/tesseractOCR/tesseract.exe',
             sHlp='tesserAct OCR installation path',
@@ -271,6 +311,7 @@ def main(args=None):
                 sImgDN          =getattr(oArg,"sImgDN"),
                 sImgFN          =getattr(oArg,"sImgFN"),
                 sKind           =getattr(oArg,"sKind"),
+                iShow           =getattr(oArg,"iShow"),
                 iVerbose        =oArg.iVerbose)
         if iR>0:
             iRet+=1

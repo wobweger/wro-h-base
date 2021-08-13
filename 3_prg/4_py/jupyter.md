@@ -3,10 +3,10 @@
 combine source and pretty documentation in one file
 
 **Jupyter** loose acronym meaning
-+ Julia
-+ Python 
-+ R
 
++ Julia
++ Python
++ R
 
 register on docker hub
 login
