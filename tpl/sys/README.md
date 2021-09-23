@@ -9,7 +9,7 @@
 | [3_aut][sys_3_aut]| automation    |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_ifc][sys_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_pkg][sys_5_pkg]| package       |               |`#2E8A57`  |`RGB(46,138,87)`   |
-| [6_clu][sys_6_clu]| could         |               |`#268026`  |`RGB(38,128,38)`   |
+| [6_clu][sys_6_clu]| cloud         |               |`#268026`  |`RGB(38,128,38)`   |
 | [7_mtc][sys_7_mtc]| maintenance   |               |`#448026`  |`RGB(68,128,38)`   |
 | [8_arv][sys_8_arv]| archive       |               |`#806226`  |`RGB(128,98,38)`   |
 |[9_dcr][sys_9_dcr] |data center    |               |`#804426`  |`RGB(128,68,38)`   |

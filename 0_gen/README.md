@@ -56,6 +56,15 @@ more on github
 [msvscDoc]: https://code.visualstudio.com/docs?start=true
 [msvscSCM]: https://code.visualstudio.com/docs/editor/versioncontrol
 
+### vscode
+
+Microsoft Visual Studio Code is open source and does not require installation.
+
++ [home](https://code.visualstudio.com/)
++ [environment](vscode_env.md)
++ [extensions](vscode_ext.md)
++ [marketplace](https://marketplace.visualstudio.com/)
+
 ### LaTex
 
 [TUG][latexTUG] distribution list
@@ -209,3 +218,84 @@ Architecture: x64
 
 [gitBranch]: https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell
 [mermaid]: https://mermaidjs.github.io/
+
+### git lfs
+
++ [getting started](https://about.gitlab.com/blog/2017/01/30/getting-started-with-git-lfs-tutorial/)
++ [handling](https://www.git-tower.com/learn/git/ebook/en/desktop-gui/advanced-topics/git-lfs/?utm_source=gitlab-blog&utm_campaign=GitLab%20LFS&utm_medium=guest-post)
+
+```shell
+git lfs track "*.png"
+git lfs track "*.pdf"
+git lfs track "*.zip"
+git lfs track "*.7z"
+git lfs track "*.tar"
+git lfs track "*.gz"
+git lfs track "*.exe"
+git lfs track "*.xls"
+git lfs track "*.xlsm"
+git lfs track "*.xlsx"
+git lfs track "*.doc"
+git lfs track "*.docx"
+git lfs track "*.vsd"
+git lfs track "*.vsdx"
+git lfs track "*.vss"
+git lfs track "*.vssx"
+git lfs track "*.ppt"
+git lfs track "*.pptx"
+git lfs track "largefiles/*.xml"
+git lfs track "largefiles/*.csv"
+```
+
+commit `.gitattributes`
+
+```shell
+git lfs ls-files
+```
+
+migration
+
+```shell
+git lfs migrate import --include "*.jpg,*.png,*.pdf,largefiles/*.xml" --include-ref=refs/heads/master
+```
+
+useful tutorial
+
++ [atlassian](https://support.atlassian.com/bitbucket-cloud/docs/use-bfg-to-migrate-a-repo-to-git-lfs/)
+  + [lfs](https://www.atlassian.com/git/tutorials/git-lfs)
++ [bfg](https://rtyley.github.io/bfg-repo-cleaner/)
++ [gitlab](https://docs.gitlab.com/12.10/ee/topics/git/lfs/migrate_to_git_lfs.html)
++ [git lfs tutorial](https://github.com/git-lfs/git-lfs/wiki/Tutorial#migrating-existing-repository-data-to-lfs)
+
+### migrate existing repos
+
+```shell
+git clone --mirror git@<site>:<group>/<repo>.git
+cd <repo>.git
+git lfs migrate import --everything --include "*.png"
+git lfs migrate import --everything --include "*.pdf"
+git lfs migrate import --everything --include "*.zip"
+git lfs migrate import --everything --include "*.7z"
+git lfs migrate import --everything --include "*.tar"
+git lfs migrate import --everything --include "*.gz"
+git lfs migrate import --everything --include "*.exe"
+git lfs migrate import --everything --include "*.ppt"
+git lfs migrate import --everything --include "*.pptx"
+git lfs migrate import --everything --include "*.vsd"
+git lfs migrate import --everything --include "*.vsdx"
+git lfs migrate import --everything --include "*.doc"
+git lfs migrate import --everything --include "*.docx"
+git lfs migrate import --everything --include "*.xlsm"
+git lfs migrate import --everything --include "*.xlsx"
+git lfs migrate import --everything --include "*.xls"
+git lfs migrate import --everything --include "*.vss"
+git lfs migrate import --everything --include "*.vssx"
+git lfs migrate import --everything --include "largefiles/*.xml"
+git lfs migrate import --everything --include "largefiles/*.csv"
+git reflog expire --expire-unreachable=now --all
+git gc --prune=now
+git push --force
+```
+
++ [git lfs tutorial](https://github.com/git-lfs/git-lfs/wiki/Tutorial#migrating-existing-repository-data-to-lfs)
+
