@@ -293,7 +293,7 @@ def main(args=None):
             print(pytesseract.get_languages(config=''))
     except:
         oLog.logTB()
-        sys.stderr.write('\nargument tesserActDN is required, aborting processing\n')
+        sys.stderr.write('\nargument tesserAct is required, aborting processing\n')
         sys.stderr.write('panic\n')
         return -1
     # +++++ beg:perform main
