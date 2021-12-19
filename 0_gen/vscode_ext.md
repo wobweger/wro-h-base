@@ -17,6 +17,8 @@ useful vscode extensions
 + [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) `ext install ms-vscode-remote.remote-ssh`
 + [GitHub Pull Requests and Issues](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github) `ext install GitHub.vscode-pull-request-github`
 + [TextUSM](https://marketplace.visualstudio.com/items?itemName=harehare.textusm) `ext install harehare.textusm`
++ [Open in Application](https://marketplace.visualstudio.com/items?itemName=fabiospampinato.vscode-open-in-application) `ext install fabiospampinato.vscode-open-in-application`
++ [draw.io](https://marketplace.visualstudio.com/items?itemName=hediet.vscode-drawio) `ext install hediet.vscode-drawio`
 
 **languages**
 

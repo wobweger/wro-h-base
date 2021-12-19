@@ -1,6 +1,6 @@
 ## fedora34
 
-[fedora](https://fedoramagazine.org/things-to-do-after-installing-fedora-34-workstation/)
++ [fedora](https://fedoramagazine.org/things-to-do-after-installing-fedora-34-workstation/)
 
 ```shell
 sudo dnf group upgrade --with-optional Multimedia
@@ -13,7 +13,7 @@ sudo dnf install gnome-extensions-app
 
 **vscode**
 
-[vscode](https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions)
++ [vscode](https://code.visualstudio.com/docs/setup/linux#_rhel-fedora-and-centos-based-distributions)
 
 ```shell
 sudo dnf install code
@@ -24,9 +24,13 @@ sudo dnf install code
 
 **OpenRefine**
 
-[OpenRefine](https://openrefine.org/download.html)
++ [OpenRefine](https://openrefine.org/download.html)
 
-**vls**
+**remmina**
+
+rdp 
+
+**vlc**
 
 + [vlc](dnf install python-vlc)
 
@@ -165,4 +169,16 @@ python -m spacy download en_core_web_sm
 
 ```shell
 pip install cupy
+```
+
+## grub
+
++ [customizer](https://tutorialforlinux.com/2020/07/28/step-by-step-fedora-33-grub-change-default-os-guide/3/)
+
+```shell
+grub2-mkconfig
+
+sudo cat /etc/default/grub
+sudo dnf install grub-customizer
+
 ```

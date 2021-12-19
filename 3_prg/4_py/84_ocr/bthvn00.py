@@ -259,7 +259,7 @@ def main(args=None):
             sDft=0,
             sHlp='show images',
             sMeta='0|1')
-    oArg.addOpt('sTesserActDN',
+    oArg.addOpt('sTesserAct',
             sDft='c:/apps/tesseractOCR/tesseract.exe',
             sHlp='tesserAct OCR installation path',
             sMeta='/path/to/tesserAct-OCR')
@@ -287,7 +287,7 @@ def main(args=None):
     # ----- end:prepare logging
     # +++++ beg:setup pytesserAct tesserAct OCR installation path
     try:
-        sPathTesserAct=getattr(oArg,"sTesserActDN")
+        sPathTesserAct=getattr(oArg,"sTesserAct")
         pytesseract.pytesseract.tesseract_cmd = sPathTesserAct
         if oArg.iVerbose>5:
             print(pytesseract.get_languages(config=''))
