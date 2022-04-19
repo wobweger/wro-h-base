@@ -66,6 +66,20 @@ for i in six.moves.xrange(1,10):
   + [time](stpPy03_time.ipynb)
   + [WebScrap](WebScrap.ipynb)
   + [time](WebScrapBeautifulSoup.ipynb)
+  + [sphinx doc](https://www.sphinx-doc.org/en/master/index.html)
+    + [autodoc](https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html)
+    + [quick guide](https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/)
+    + [tutorial](https://sphinx-tutorial.readthedocs.io/start/)
+    + [build cfg](https://www.sphinx-doc.org/en/master/usage/configuration.html#build-config)
+    + [repo](https://gitlab.com/pages/sphinx)
+    + [pyment](https://github.com/dadadel/pyment)
+    + [google doc style](https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html#example-google)
+    + [google doc style](https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html)
+    + [rest doc style](http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html)
+    + [article](https://opensource.com/article/19/11/document-python-sphinx)
+    + [MyST](https://myst-parser.readthedocs.io/en/latest/index.html)
+    + [howto](https://blog.matteoferla.com/2019/11/convert-python-docstrings-to-github.html)
+    + [RTD tutorial](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html#the-sphinx-docstring-format)
 
 ### packaging
 
