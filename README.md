@@ -133,7 +133,7 @@ link collection
 | [6_clu][sys_6_clu]| cloud         |               |`#268026`  |`RGB(38,128,38)`   |
 | [7_mtc][sys_7_mtc]| maintenance   |               |`#448026`  |`RGB(68,128,38)`   |
 | [8_arv][sys_8_arv]| archive       |               |`#806226`  |`RGB(128,98,38)`   |
-|[9_dcr][sys_9_dcr] |data center    |               |`#804426`  |`RGB(128,68,38)`   |
+| [9_dcr][sys_9_dcr]| data center   |               |`#804426`  |`RGB(128,68,38)`   |
 
 [sys]: ./tpl/sys/README.md
 [sys_0_gen]: ./tpl/sys/0_gen/README.md

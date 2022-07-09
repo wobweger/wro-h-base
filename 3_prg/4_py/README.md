@@ -58,6 +58,18 @@ for i in six.moves.xrange(1,10):
   print(i)
 ```
 
+### documentation
+
++ [style guide](https://devguide.python.org/documenting/#style-guide)
++ [sphinx doc](https://www.sphinx-doc.org/en/master/index.html)
+  + [module](https://www.sphinx-doc.org/en/master/py-modindex.html)
+  + [directives](https://www.sphinx-doc.org/en/master/usage/restructuredtext/directives.html)
+  + [napoleon](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html)
+  + [quick start](https://sphinx-hxl.readthedocs.io/en/stable/usage/quickstart.html)
+  + samples
+    + [google style](https://www.sphinx-doc.org/en/master/usage/extensions/example_google.html#example-google)
+    + [sample doc](https://matplotlib.org/sampledoc/index.html)
+
 ### tutorial
 
 + how to, located in repo
@@ -69,7 +81,9 @@ for i in six.moves.xrange(1,10):
   + [sphinx doc](https://www.sphinx-doc.org/en/master/index.html)
     + [autodoc](https://www.sphinx-doc.org/en/master/man/sphinx-apidoc.html)
     + [quick guide](https://samnicholls.net/2016/06/15/how-to-sphinx-readthedocs/)
+    + [sample doc](https://matplotlib.org/sampledoc/index.html)
     + [tutorial](https://sphinx-tutorial.readthedocs.io/start/)
+    + [napoleon](https://www.sphinx-doc.org/en/master/usage/extensions/napoleon.html)
     + [build cfg](https://www.sphinx-doc.org/en/master/usage/configuration.html#build-config)
     + [repo](https://gitlab.com/pages/sphinx)
     + [pyment](https://github.com/dadadel/pyment)
@@ -78,14 +92,25 @@ for i in six.moves.xrange(1,10):
     + [rest doc style](http://thomas-cokelaer.info/tutorials/sphinx/docstring_python.html)
     + [article](https://opensource.com/article/19/11/document-python-sphinx)
     + [MyST](https://myst-parser.readthedocs.io/en/latest/index.html)
+    + [cloud build and sphinx](https://blog.pythian.com/generating-documentation-for-your-python-code-using-cloud-build-and-sphinx/)
     + [howto](https://blog.matteoferla.com/2019/11/convert-python-docstrings-to-github.html)
+    + [sphinx github](https://python.plainenglish.io/how-to-host-your-sphinx-documentation-on-github-550254f325ae)
     + [RTD tutorial](https://sphinx-rtd-tutorial.readthedocs.io/en/latest/docstrings.html#the-sphinx-docstring-format)
+    + tutorial
+      + [gtilab ci](https://gitlab.com/pages/sphinx/-/blob/master/.gitlab-ci.yml)
+      + [gitlab ci](https://www.patricksoftwareblog.com/setting-up-gitlab-ci-for-a-python-application/)
+    + stackoverflow
+      + [source link](https://stackoverflow.com/questions/48296169/removing-the-view-source-link-when-using-read-the-docs-sphinx-with-readthedocs)
+      + [blank line warning](https://github.com/sphinx-doc/sphinx/issues/4479)
+  + [python-gitlab](https://python-gitlab.readthedocs.io/en/stable/index.html)
+  + [pypi](https://docs.gitlab.com/ee/user/packages/pypi_repository/)
 
 ### packaging
 
 + [tutorial](https://packaging.python.org/tutorials/packaging-projects/#classifiers)
 + [installing](https://packaging.python.org/tutorials/installing-packages/)
 + [classifiers](https://pypi.org/classifiers/)
++ [cibuildwheel](https://github.com/pypa/cibuildwheel)
 
 ### installer
 
@@ -107,6 +132,10 @@ pyinstaller -wF my_program.py
 
 + [pySimpleGUI](https://pysimplegui.readthedocs.io/en/latest/)
 + [pySimpleGUI git](https://github.com/PySimpleGUI/PySimpleGUI)
++ [installing](https://wiki.wxpython.org/How%20to%20install%20wxPython)
++ [github](https://github.com/wxWidgets/Phoenix)
++ [linux](https://extras.wxpython.org/wxPython4/extras/linux/gtk3/)
+
 
 #### install{#wxPython_install}
 
