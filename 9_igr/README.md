@@ -64,6 +64,7 @@ free accessible git servers
 ### archive
 
 + [archive.org][archOrg]
++ [Beinecke lib](https://beinecke.library.yale.edu/)
 + [MDPI][MDPI] open access
 + [Schnitzler diary](https://schnitzler-tagebuch.acdh.oeaw.ac.at/pages/index.html)
 + [VOEB Blog](https://www.univie.ac.at/voeb/blog/)

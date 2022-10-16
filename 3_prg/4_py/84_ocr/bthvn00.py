@@ -73,7 +73,27 @@ def ocr(sInFN,
         if iUseCV>0:
             oLog.logInf('ocr:beg sOnFN:%r sOtFN:%r',sInFN,sOtFN)
             img_cv = cv2.imread(sInFN)
-            img_rgb = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
+            img_cv = cv2.resize(img_cv,None,fx=2,fy=2,interpolation=cv2.INTER_CUBIC)
+            img_cv=cv2.cvtColor(img_cv,cv2.COLOR_BGR2GRAY)
+            #img_cv = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
+            #img_rgb=img_cv
+            ##img_rgb=cv2.threshold(cv2.GaussianBlur(img_cv, (5, 5), 0), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+            #img_rgb=cv2.threshold(cv2.bilateralFilter(img_cv, 5, 85, 85), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+            #22a
+            #img_rgb=cv2.threshold(cv2.bilateralFilter(img_cv, 5, 75, 75), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+            #22c
+            img_rgb=cv2.threshold(cv2.bilateralFilter(img_cv, 5, 65, 65), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+            #22f
+            #img_rgb=cv2.threshold(cv2.bilateralFilter(img_cv, 5, 55, 65), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+            #22g
+            #img_rgb=cv2.threshold(cv2.medianBlur(img_cv, 3), 0, 255, cv2.THRESH_BINARY + cv2.THRESH_OTSU)[1]
+            #22b
+            ##img_rgb=cv2.adaptiveThreshold(cv2.GaussianBlur(img_cv, (5, 5), 0), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+            #img_rgb=cv2.adaptiveThreshold(cv2.bilateralFilter(img_cv, 9, 75, 75), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+            #22d
+            #img_rgb=cv2.adaptiveThreshold(cv2.medianBlur(img_cv, 3), 255, cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY, 31, 2)
+            #22e
+            #img_rgb = cv2.cvtColor(img_cv, cv2.COLOR_BGR2RGB)
             if iShow>1:
                 # +++++ beg:
                 sTitle="org:%r"%(sInFN)
