@@ -8,6 +8,8 @@
 #               pip install streamlit
 #               pip install streamlit-cropper
 #               pip install opencv-python
+#               pip install PIL
+#               pip install imageio
 #
 # Author:       Walter Obweger
 #
@@ -22,6 +24,7 @@
 # https://stackoverflow.com/questions/61282938/imageio-individual-frame-rates
 
 import os
+import shutil
 import imageio
 
 import streamlit as st
@@ -36,7 +39,7 @@ sOutDN='/wrk/dat/LinWildLife/crop'
 sGifDN='/wrk/dat/LinWildLife/gif'
 
 # Upload an image and set some options for demo purposes
-st.header("Cropper Demo")
+st.header("image crop git")
 img_file = st.sidebar.file_uploader(label='Upload a file', type=['png', 'jpg'])
 realtime_update = st.sidebar.checkbox(label="Update in Real Time", value=True)
 box_color = st.sidebar.color_picker(label="Box Color", value='#0000FF')
@@ -67,7 +70,8 @@ if img_file:
         st.write(sUpLdFN)
     if iVerbose>0:
         st.write(cropped_box)
-    if st.button('apply save to outDN'):
+    if st.button('bulk apply save to outDN'):
+        st.write('outDN:%r'%(sOutDN))
         iCnt=0
         if iVerbose>10:
             st.write(sInpDN)
@@ -91,6 +95,36 @@ if img_file:
                 pass
             break
         st.write('%d file cropped'%(iCnt))
+    slrFileToKeep=st.slider("keep every x-th file",min_value=1,max_value=100,value=10,step=1)
+    if st.button('thin out'):
+        lDelFN=[]
+        iMax=slrFileToKeep
+        st.write("files to keep %r"%(iMax))
+        for sRoot,lDN,lFN in os.walk(sOutDN):
+            iCnt=0
+            lFN.sort()
+            for sFN in lFN:
+                if iVerbose>20:
+                    st.write(sFN)
+                if sFN.endswith('.png'):
+                    sCrpFN=os.path.join(sOutDN,sFN)
+                    if iVerbose>20:
+                        st.write("iCnt:%d iMax:%d sFN:%r"%(iCnt,iMax,sFN))
+                    if iCnt<=iMax:
+                        if iCnt>0:
+                            lDelFN.append(sCrpFN)
+                        else:
+                            if iVerbose>10:
+                                st.write('keeP %r'%(sCrpFN))
+                    else:
+                        iCnt=0
+                        if iVerbose>10:
+                            st.write('keep %r'%(sCrpFN))
+                    iCnt+=1
+            break 
+        for sFN in lDelFN:
+            os.remove(sFN)
+        st.write('removed %d files'%(len(lDelFN)))
     lPart=sUpLdFN.split('_')
     sPfx='_'.join(lPart[:-1])
     txtGifDN=st.text_input("gif FN",value=sPfx)
@@ -102,6 +136,7 @@ if img_file:
             iCount=0
             for sRoot,lDN,lFN in os.walk(sOutDN):
                 lImg=[]
+                lFN.sort()
                 for sFN in lFN:
                     sTmpFN=os.path.join(sRoot,sFN)
                     lImg.append(imageio.v2.imread(sTmpFN))
@@ -110,3 +145,26 @@ if img_file:
             imageio.mimsave(sGifFullFN,lImg,'GIF',fps=iFPS)
             iCount+=1
             st.write('gif created',sGifFullFN)
+    if st.button("del raw"):
+        for sRoot,lDN,lFN in os.walk(sInpDN):
+            for sFN in lFN:
+                sTmpFN=os.path.join(sRoot,sFN)
+                os.remove(sTmpFN)
+    if st.button("archive cropped"):
+        st.write("copy %r"%(sOutDN))
+        sYr=lPart[0][:4]
+        sTmpDN='_'.join(lPart[:3])
+        sDstDN='/'.join([sOutDN,'..',sYr,lPart[0],sTmpDN])
+        st.write("to %r"%(sDstDN))
+        try:
+            os.makedirs(sDstDN)
+        except:
+            pass
+        for sRoot,lDN,lFN in os.walk(sOutDN):
+            for sFN in lFN:
+                if sFN.endswith('.png'):
+                    sTmpFN=os.path.join(sRoot,sFN)
+                    sDstFN=os.path.join(sDstDN,sFN)
+                    shutil.move(sTmpFN,sDstFN)
+
+            
