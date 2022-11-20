@@ -370,6 +370,12 @@ hierarchy
 |8   |app   |application                        |               |
 |9   |igr   |integration                        |               |
 
+## setup
+
+```shell
+pip3 install -r requirements.txt
+```
+
 ## contributing
 
 + [digital ethics](./0_gen/QT0418372ENN.en.pdf)
