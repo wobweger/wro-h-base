@@ -10,3 +10,5 @@
   + [prjGtg](https://www.gutenberg.org/ebooks/34901)
 + [Wilhelm von Humboldt](https://en.wikipedia.org/wiki/Wilhelm_von_Humboldt)
   + [the sphere and duties of government](https://archive.org/details/spheredutiesofgo00humb)
++ [Immanuel Kant](https://en.wikipedia.org/wiki/Immanuel_Kant)
+  + [Critik der reinen Vernuft](https://de.wikisource.org/wiki/Critik_der_reinen_Vernunft_(1781))
