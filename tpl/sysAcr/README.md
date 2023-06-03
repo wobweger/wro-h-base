@@ -20,7 +20,7 @@
 |f|[f_fmr][acr_f_fmr]|fmr|framework                  |`#3DAE75` |`RGB(61,174,117)`
 |g|[g_gds][acr_g_gds]|gds|guidelines                 |`#3DAE88` |`RGB(61,174,136)`
 |h|[h_hry][acr_h_hry]|hry|hierarchy                  |`#3DAE9B` |`RGB(61,174,155)`
-|I|[I_ifc][acr_I_ifc]|ifc|interface                  |`#3DAEAE` |`RGB(61,174,174)`
+|i|[i_ifc][acr_i_ifc]|ifc|interface                  |`#3DAEAE` |`RGB(61,174,174)`
 |j|[j_jrn][acr_j_jrn]|jrn|journal                    |`#3D9BAE` |`RGB(61,155,174)`
 |k|[k_krn][acr_k_krn]|krn|kernel                     |`#3D88AE` |`RGB(61,136,174)`
 |l|[l_lib][acr_l_lib]|lib|library                    |`#3D75AE` |`RGB(61,117,174)`
@@ -55,7 +55,7 @@
 [acr_f_fmr]: ./f_fmr/README.md
 [acr_g_gds]: ./g_gds/README.md
 [acr_h_hry]: ./h_hry/README.md
-[acr_I_ifc]: ./I_ifc/README.md
+[acr_i_ifc]: ./i_ifc/README.md
 [acr_j_jrn]: ./j_jrn/README.md
 [acr_k_krn]: ./k_krn/README.md
 [acr_l_lib]: ./l_lib/README.md
