@@ -1,9 +1,7 @@
 import bpy
-
-dRes=bpy.ops.sequencer.select_all(action='SELECT')
-print(dRes=={'FINISHED'})
-print('FINISHED' in dRes)
-
+import lindworm.logUtil as ldmLg
+import lindworm.logUtil as logUtil
+logUtil.logInit("./x_log/bdr7mov.log",iLevel=0,sLogger=None)
 
 sScene = bpy.context.scene.name
 
@@ -21,34 +19,23 @@ for oMov in lStrip:
     lMov.append(oMov)
 
 
-bpy.data.scenes[sScene].sequence_editor.sequences_all['DSCF0002-igel.AVI']
-
-bpy.data.scenes[sScene].sequence_editor.sequences_all['DSCF0002-igel.AVI'].frame_start in dStripFrmBeg
-dStripFrmBeg[bpy.data.scenes[sScene].sequence_editor.sequences_all['DSCF0002-igel.AVI'].frame_start]
 lKeys=list(dStripFrmBeg.keys())
 lKeys.sort()
 
 oMovPrv=None
+iFrmEndPrv=0
 for iFrmBeg in lKeys:
-    if oMovPrv is None:
-        oMovAct=None
-        lMovAct=dStripFrmBeg[iFrmBeg]
-        iFrmEnd=0
-        for oMov in lMovAct:
-            iFrmEndTmp=oMov.frame_start+oMov.frame_final_duration
-            if iFrmEndTmp>iFrmEnd:
-                iFrmEnd=iFrmEndTmp
-                oMovAct=oMov
-        oMovPrv=oMovAct
-    else:
-        oMovAct=None
-        lMovAct=dStripFrmBeg[iFrmBeg]
-        iFrmEnd=0
-        for oMov in lMovAct:
-            oMov.frame_start=iFrmEnd
-            iFrmEndTmp=oMov.frame_start+oMov.frame_final_duration
-            if iFrmEndTmp>iFrmEnd:
-                iFrmEnd=iFrmEndTmp
-                oMovAct=oMov
-        if oMovAct is not None:
-            oMovPrv=oMovAct
+    ldmLg.logDbg('iFrmBeg:%d',iFrmBeg)
+    oMovAct=None
+    lMovAct=dStripFrmBeg[iFrmBeg]
+    iFrmEnd=0
+    for oMov in lMovAct:
+        oMov.frame_start=iFrmEndPrv
+        iFrmEndTmp=oMov.frame_start+oMov.frame_final_duration
+        ldmLg.logDbg('iFrmBeg:%d iFrmEndTmp:%d oMov name:%r beg:%d dur:%d',
+                            iFrmBeg,iFrmEndTmp,oMov.name,oMov.frame_start,oMov.frame_final_duration)
+        if iFrmEndTmp>iFrmEnd:
+            iFrmEnd=iFrmEndTmp
+            oMovAct=oMov
+    oMovPrv=oMovAct
+    iFrmEndPrv=iFrmEnd
