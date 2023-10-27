@@ -1,0 +1,5 @@
+ffmpeg
+ffmpeg-python
+pandas
+
+lindworm
