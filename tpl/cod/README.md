@@ -5,7 +5,7 @@
 | -----             | ----          | -------       |---        |---                |
 | [0_gen][cod_0_gen]| general       |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_sys][cod_1_sys]| system        |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_cor][cod_2_cor]| core          |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_cor][cod_2_cor]| core          |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_prg][cod_3_prg]| program       |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_ifc][cod_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_eng][cod_5_eng]| engineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |

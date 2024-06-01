@@ -4,7 +4,7 @@
 | -----             | ----          | -------       |---        |---                |
 | [0_prj][prj_0_prj]| project       |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_prc][prj_1_prc]| process       |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_spc][prj_2_spc]| specification |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_spc][prj_2_spc]| specification |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_dsg][prj_3_dsg]| design        |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_mdu][prj_4_mdu]| module        |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_ipl][prj_5_ipl]| implementation|               |`#2E8A57`  |`RGB(46,138,87)`   |

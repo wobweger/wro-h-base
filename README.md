@@ -8,7 +8,7 @@ covers various topics/systems.
 |   |[cod][cod]|[eng][eng]|[prj][prj]| [prg][prg] | [aut][aut] | |  |
 |[0][0_gen]  | gen | std | prj | gen | gen |`#802680`  |`RGB(128,38,128)`  |
 |[1][1_sys]  | sys | sys | prc | sys | dev |`#752E99`  |`RGB(117,46,153)`  |
-|[2][2_cor]  | cor | equ | spc | cpl | plc |`#262680`  |`RGB(38,68,128)`   |
+|[2][2_cor]  | cor | equ | spc | cpl | plc |`#262680`  |`RGB(38,38,128)`   |
 |[3][3_prg]  | prg | prg | dsg | dbs | dcs |`#264480`  |`RGB(38,68,128)`   |
 |[4][4_ifc]  | ifc | ifc | mdu | web | ifc |`#268080`  |`RGB(38,128,128)`  |
 |[5][5_eng]  | eng | eng | ipl | svc | eng |`#2E8A57`  |`RGB(46,138,87)`   |
@@ -68,7 +68,7 @@ link collection
 | -----             | ----          | -------       |---        |---                |
 | [0_std][eng_0_std]| standard      |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_sys][eng_1_sys]| system        |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_equ][eng_2_equ]| equipment     |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_equ][eng_2_equ]| equipment     |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_prg][eng_3_prg]| program       |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_itc][eng_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_eng][eng_5_eng]| engineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |
@@ -97,7 +97,7 @@ link collection
 | -----             | ----          | -------       |---        |---                |
 | [0_std][aut_0_gen]| general       |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_dev][aut_1_dev]| device        |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_equ][aut_2_equ]| equipment     |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_equ][aut_2_equ]| equipment     |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_dcs][aut_3_dcs]| program       |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_itc][aut_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_aut][aut_5_eng]| engineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |
@@ -126,7 +126,7 @@ link collection
 | -----             | ----          | -------       |---        |---                |
 | [0_gen][sys_0_gen]| general       |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_dev][sys_1_dev]| device        |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_equ][sys_2_equ]| equipment     |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_equ][sys_2_equ]| equipment     |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_aut][sys_3_aut]| automation    |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_ifc][sys_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_pkg][sys_5_pkg]| packages      |               |`#2E8A57`  |`RGB(46,138,87)`   |
@@ -156,7 +156,7 @@ link collection
 | -----             | ----          | -------       |---        |---                |
 | [0_gen][cod_0_gen]| general       |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_sys][cod_1_sys]| system        |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_cor][cod_2_cor]| core          |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_cor][cod_2_cor]| core          |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_prg][cod_3_prg]| program       |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_ifc][cod_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_eng][cod_5_eng]| engineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |
@@ -186,7 +186,7 @@ link collection
 | -----             | ----          | -------       |---        |---                |
 |[0_gen][prg_0_gen] |general        |               |`#802680`  |`RGB(128,38,128)`  |
 |[1_sys][prg_1_sys] |system         |               |`#752E99`  |`RGB(117,46,153)`  |
-|[2_cpl][prg_2_cpl] |compiler       |               |`#262680`  |`RGB(38,68,128)`   |
+|[2_cpl][prg_2_cpl] |compiler       |               |`#262680`  |`RGB(38,38,128)`   |
 |[3_dbs][prg_3_dbs] |database system|               |`#264480`  |`RGB(38,68,128)`   |
 |[4_net][prg_4_net] |network        |               |`#268080`  |`RGB(38,128,128)`  |
 |[5_svc][prg_5_svc] |service        |               |`#2E8A57`  |`RGB(46,138,87)`   |
@@ -215,7 +215,7 @@ link collection
 | -----             | ----          | -------       |---        |---                |
 | [0_prj][prj_0_prj]| project       |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_prc][prj_1_prc]| process       |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_spc][prj_2_spc]| specification |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_spc][prj_2_spc]| specification |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_dsg][prj_3_dsg]| design        |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_mdu][prj_4_mdu]| module        |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_ipl][prj_5_ipl]| implementation|               |`#2E8A57`  |`RGB(46,138,87)`   |
