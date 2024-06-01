@@ -4,7 +4,7 @@
 | -----             | ----          | -------       |---        |---                |
 | [0_std][eng_0_std]    | standard      |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_sys][eng_1_sys]    | system        |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_equ][eng_2_equ]    | equipment     |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_equ][eng_2_equ]    | equipment     |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_prg][eng_3_prg]    | program       |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_itc][eng_4_ifc]    | interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_eng][eng_5_eng]    | engineering   |               |`#2E8A57`  |`RGB(46,138,87)`   |

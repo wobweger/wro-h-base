@@ -5,7 +5,7 @@
 | -----             | ----          | -------       |---        |---                |
 | [0_gen][sys_0_gen]| general      |               |`#802680`  |`RGB(128,38,128)`  |
 | [1_sys][sys_1_sys]| system        |               |`#752E99`  |`RGB(117,46,153)`  |
-| [2_equ][sys_2_equ]| equipment     |               |`#262680`  |`RGB(38,68,128)`   |
+| [2_equ][sys_2_equ]| equipment     |               |`#262680`  |`RGB(38,38,128)`   |
 | [3_aut][sys_3_aut]| automation    |               |`#264480`  |`RGB(38,68,128)`   |
 | [4_ifc][sys_4_ifc]| interface     |               |`#268080`  |`RGB(38,128,128)`  |
 | [5_pkg][sys_5_pkg]| package       |               |`#2E8A57`  |`RGB(46,138,87)`   |
