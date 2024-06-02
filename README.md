@@ -452,9 +452,10 @@ pip3 install -r requirements.txt
 
 ## contributing
 
+contributions are welcome
+
 + [digital ethics](./0_gen/QT0418372ENN.en.pdf)
 
-![WOL](./v_img/5_elements_TanmayVora_Framed_in_Orange.png)
 
 
 
