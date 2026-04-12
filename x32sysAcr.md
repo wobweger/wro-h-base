@@ -19,7 +19,7 @@
 |	15|	f|f_fmr|	f_15|	fmr|	fmr	|`#3DAE75`	|`RGB(61,174,117)`
 |	16|	g|g_gds|	g_16|	gds|	gds	|`#3DAE88`	|`RGB(61,174,136)`
 |	17|	h|h_hry|	h_17|	hry|	hry	|`#3DAE9B`	|`RGB(61,174,155)`
-|	18|	i|I_ifc|	i_18|	ifc|	ifc	|`#3DAEAE`	|`RGB(61,174,174)`
+|	18|	i|i_ifc|	i_18|	ifc|	ifc	|`#3DAEAE`	|`RGB(61,174,174)`
 |	19|	j|j_jrn|	j_19|	jrn|	jrn	|`#3D9BAE`	|`RGB(61,155,174)`
 |	20|	k|k_krn|	k_20|	krn|	krn	|`#3D88AE`	|`RGB(61,136,174)`
 |	21|	l|l_lib|	l_21|	lib|	lib	|`#3D75AE`	|`RGB(61,117,174)`
